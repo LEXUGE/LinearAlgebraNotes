@@ -1,0 +1,131 @@
+#+TITLE: Linear Algebra Note
+#+AUTHOR: Harry Ying
+#+OPTIONS: date:nil
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue}
+#+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+
+* Chapter 1
+** $\S$ 1
+*** Notes
+A generic vector space $V$ is not a field because there is no definition of $v^{-1}$ for some $v\in V$, fulfilling not the definition of a field.\\
+**** *Pg. 4 Proof of $(-1)v=v$*
+$$\begin{aligned}
+(-1)v+v&=(-1)v+1\cdot v\\
+&=(-1+1)v\\
+&=v+(-v)
+\end{aligned}$$
+Thus, $(-1)v=-v$.
+**** *Pg. 6 Proof of SP 3*
+$$\begin{aligned}
+(xA)\cdot B&=\sum\limits_{i=1}^{n}(xa_i) b_{i}\\
+&=\sum\limits_{i=1}^{n}x(a_i b_{i})\\
+&=x\sum\limits_{i=1}^{n} a_i b_{i}\\
+&=x(A\cdot B)\\
+A\cdot (xB)&=\sum\limits_{i=1}^{n}a_i (xb_{i})\\
+&=\sum\limits_{i=1}^{n}x(a_i b_{i})\\
+&=x\sum\limits_{i=1}^{n} a_i b_{i}\\
+&=x(A\cdot B)
+\end{aligned}$$
+**** **Pg. 7**
+\\
+Upper one:
+$$\begin{aligned}
+(A+B)^2&=(A+B)\cdot (A+B)\\
+&=(A+B)\cdot A+(A+B)\cdot B && \text{Use SP 2}\\
+&=A^2+B\cdot A+A\cdot B+B^2 && \text{Use SP 1}\\
+\end{aligned}$$
+Bottom one:
+Since $K$ is a field, all *VS* s regarding summation or product of functions are actually closed on $K$. By applying field axioms, $V$ is then a vector space over $K$.
+**** **Pg. 9**
+\\
+<<U+W>>
+Let $a_1=(u_1+w_1),a_2=(u_2+w_2)$. Both of them $\in (U+W)$.\\
+Since $U,W$ are subspaces of $V$, $U,W\in V$. Thus, $a_1,a_2 \in V$ as $u_1,w_1,u_2,w_2\in V$, moreover, $(U+W)\subset V$.\\
+$a_1+a_2=(u_1+u_2)+(w_1+w_2)\in (U+W)$ \\
+$ca_1=c(u_1+w_1)=(cu_1)+(cw_1)\in (U+W)$ \\
+Since $O\in U$ and $O\in W$, $O=O+O\in (U+W)$. Thus, $(U+W)$ is a subspace of $V$.
+*** Exercises
+**** *Exercise 1*
+Let $v\in{} V$, $c[v+(-v)]=cv+c(-v)=cv+(-c)v=v\cdot{}0=v\cdot{}(1-1)=v+(-v)=O$
+**** *Exercise 2*
+Since $c\not = 0$
+$$\begin{aligned}
+O&=cv+[-(cv)]\\
+cv&=cv+[-(cv)]\\
+O&=-(cv)\\
+\frac{-1}{c}\cdot O &= (-c)v\cdot \frac{-1}{c}\\
+\frac{-1}{c}\cdot (v-v) &= v\\
+\frac{-1}{c}\cdot v+ \frac{1}{c}\cdot v &= v\\
+v\cdot (1-1)&=v\\
+v-v&=v\\
+O&=v
+\end{aligned}$$
+**** *Exercise 3*
+\\
+$\forall g\in V, (g+f)(x) = g(x)+f(x) = f(x)+g(x) = (f+g)(x) \Rightarrow g+f = f+g$.\\
+If $O+u = u$, $(O+u)(x) = O(x)+u(x)= u(x)$. Therefore, $O(x)=0$.
+**** *Exercise 4*
+$$\begin{aligned}
+v+w&=O\\
+v+w&=v+(-v)\\
+w&=-v
+\end{aligned}$$
+**** *Exercise 5*
+$$\begin{aligned}
+v+w&=v\\
+v+(-v)+w&=v+(-v)\\
+O+w&=O
+\end{aligned}$$
+Since $\forall u, O+u=u$, we have $w=O$.
+**** *Exercise 6*
+\\
+Let $W=\{B| B\cdot A_{1}=O\ \text{and}\ B\cdot A_2=O\}$. Specifically, it is clear that $O\in W$ as $O\cdot A = \sum\limits_{i=1}^{n} b_i a_i=\sum\limits_{i=1}^{n} 0\times a_i=0$.\\
+Let $v_1,v_2 \in W$ such that $v_1\cdot A_1=0$, $v_1\cdot A_2=0$, $v_2\cdot A_1=0$, $v_2\cdot A_2=0$. Thus,
+$$\begin{aligned}
+(v_1+v_2)\cdot A_1&=v_1\cdot A_1+v_2\cdot A_1\\
+&=O+O\\
+&=O\\
+[c(v_1+v_2)]\cdot A_1&=(cv_1+cv_2)\cdot A_1\\
+&=(cv_1)\cdot A_1+(cv_2)\cdot A_1\\
+&=c(v_1\cdot A_1+v_2\cdot A_1)\\
+&=cO\\
+&=O
+\end{aligned}$$.
+It is easy to show for $A_2$ then. Therefore, $(v_1+v_2)\in W$.
+**** *Exercise 7*
+Same to apply as Exercise 6.
+**** *Exercise 8*
+\\
+Name the set as $W$.
+***** Proof
+\\
+$v_1+v_2=(x_1+x_2,y_1+y_2), x_1+x_2=y_1+y_2 \Rightarrow (v_1+v_2)\in W$ \\
+$cv=(cx,cy), cx=cy \Rightarrow cv\in W$ \\
+$O=(0,0)\in W$
+***** Proof
+See Part (a).
+***** Proof
+Same technique as in Part (a).
+**** *Exercise 9*
+See Exercise 8.
+**** *Exercise 10*
+\\
+For $U\cap W$, let $v_1,v_2\in U\cap W$. Since $v_1, v_2\in U$ and $U$ is a subspace, $v_1+v_2\in U$. In same way, we can see that $v_{1}+v_2\in W$. Thus, $v_1+v_2\in U\cap W$.\\
+Since $v_1\in U$, $cv_1\in U$. Also, it shows $cv_1\in W$ in the same way. Thus, $cv_{1}\in U\cap W$.
+Because $U, W$ are subspaces, $O\in U$ and $O\in W$. Thus, $O\in U\cap W$. Therefore, $U\cap W$ is a subspace.\\
+Refer to the [[U+W][note part]] for proof for $U+W$.
+**** *Exercise 11*
+Since $L$ is a field, *VS1, VS3, VS4, VS8* are established under field axioms, and multiplication and addition are closed in $L$. For *VS5, VS6, VS7*, they are all valid as $K\subset L$. $O$ is simply $0$, and $1\cdot u=u$ is  established in $L$.
+**** *Exercise 12*
+\\
+For $x,y\in K$, we have\\
+$x+y=a_1+b_1\sqrt{2}+a_2+b_2\sqrt{2}=(a_1+a_2)+(b_1+b_2)\sqrt{2}$. Since $a_1,b_1,a_2,b_2\in \mathbb{Q}$, $(a_1+a_2),(b_1+b_2)\in\mathbb{Q}$. Thus, $x+y\in K$.\\
+$xy=(a_1 a_2+ 2b_1 b_2)+(a_2 b_1 + a_1 b_2)\times \sqrt{2}$. Since $a_1,b_1,a_2,b_2\in \mathbb{Q}$, $(a_1 a_2+ 2b_1 b_2),(a_2 b_1 + a_1 b_2)\in\mathbb{Q}$. Thus, $x+y\in K$.\\
+$-x=-a+-b\sqrt{2}$. Since $a,b\in\mathbb{Q}$, $-a,-b\in\mathbb{Q}$. Thus, $-x\in K$.\\
+$x^{-1}=\frac{1}{a+b\sqrt{2}}=\frac{a+b\sqrt{2}}{a^2-2b^{2}}=\frac{a}{a^2-2b^2}+\frac{b}{a^2-2b^2}\sqrt{2}$. It is easy to see that *new* $a,b\in\mathbb{Q}$ as $a,b\in\mathbb{Q}$. Thus, $x^{-1}\in K$.
+Specifically, if $a=b=0$, $0\in\mathbb{Q}$. If $a=1,b=0$, $1\in\mathbb{Q}$.\\
+Thus, $K$ is a field.
+**** *Exercise 13*
+Same technique as Exercise 12.
+**** *Exercise 14*
+Same technique as Exercise 12. Be careful that $\gamma=\pm \sqrt{c}$.
