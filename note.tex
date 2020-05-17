@@ -1,4 +1,4 @@
-% Created 2020-05-17 Sun 11:21
+% Created 2020-05-17 Sun 21:28
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,15 +31,15 @@
 \maketitle
 \tableofcontents \clearpage
 \section{Chapter 1}
-\label{sec:orgf02a809}
+\label{sec:orgf1e920f}
 \subsection{\(\S\) 1}
-\label{sec:orgdb9cd73}
+\label{sec:orge6ee825}
 \subsubsection{Notes}
-\label{sec:orgaacf333}
+\label{sec:org2eaf95e}
 A generic vector space \(V\) is not a field because there is no definition of \(v^{-1}\) for some \(v\in V\), fulfilling not the definition of a field.\\
 \begin{enumerate}
 \item \textbf{Pg. 4 Proof of \((-1)v=v\)}
-\label{sec:org2134f1a}
+\label{sec:org4a490b4}
 $$\begin{aligned}
 (-1)v+v&=(-1)v+1\cdot v\\
 &=(-1+1)v\\
@@ -47,7 +47,7 @@ $$\begin{aligned}
 \end{aligned}$$
 Thus, \((-1)v=-v\).
 \item \textbf{Pg. 6 Proof of SP 3}
-\label{sec:orged21678}
+\label{sec:orge3568e5}
 $$\begin{aligned}
 (xA)\cdot B&=\sum\limits_{i=1}^{n}(xa_i) b_{i}\\
 &=\sum\limits_{i=1}^{n}x(a_i b_{i})\\
@@ -59,7 +59,7 @@ A\cdot (xB)&=\sum\limits_{i=1}^{n}a_i (xb_{i})\\
 &=x(A\cdot B)
 \end{aligned}$$
 \item \textbf{\textbf{Pg. 7}}
-\label{sec:org380fb03}
+\label{sec:org4e0db8b}
 
 Upper one:
 $$\begin{aligned}
@@ -70,9 +70,9 @@ $$\begin{aligned}
 Bottom one:
 Since \(K\) is a field, all \textbf{VS} s regarding summation or product of functions are actually closed on \(K\). By applying field axioms, \(V\) is then a vector space over \(K\).
 \item \textbf{\textbf{Pg. 9}}
-\label{sec:orgd99ec7c}
+\label{sec:orgabfd88a}
 
-\label{org204a34a}
+\label{org72f045b}
 Let \(a_1=(u_1+w_1),a_2=(u_2+w_2)\). Both of them \(\in (U+W)\).\\
 Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \(u_1,w_1,u_2,w_2\in V\), moreover, \((U+W)\subset V\).\\
 \(a_1+a_2=(u_1+u_2)+(w_1+w_2)\in (U+W)\) \\
@@ -80,13 +80,13 @@ Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \
 Since \(O\in U\) and \(O\in W\), \(O=O+O\in (U+W)\). Thus, \((U+W)\) is a subspace of \(V\).
 \end{enumerate}
 \subsubsection{Exercises}
-\label{sec:org6980b92}
+\label{sec:org9e52366}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:orgffea272}
+\label{sec:orgd35474b}
 Let \(v\in{} V\), \(c[v+(-v)]=cv+c(-v)=cv+(-c)v=v\cdot{}0=v\cdot{}(1-1)=v+(-v)=O\)
 \item \textbf{Exercise 2}
-\label{sec:orgb493056}
+\label{sec:org8e0d9ea}
 Since \(c\not = 0\)
 $$\begin{aligned}
 O&=cv+[-(cv)]\\
@@ -100,19 +100,19 @@ v-v&=v\\
 O&=v
 \end{aligned}$$
 \item \textbf{Exercise 3}
-\label{sec:org5075b0a}
+\label{sec:org6d348e2}
 
 \(\forall g\in V, (g+f)(x) = g(x)+f(x) = f(x)+g(x) = (f+g)(x) \Rightarrow g+f = f+g\).\\
 If \(O+u = u\), \((O+u)(x) = O(x)+u(x)= u(x)\). Therefore, \(O(x)=0\).
 \item \textbf{Exercise 4}
-\label{sec:orgb449f0d}
+\label{sec:orgee340b3}
 $$\begin{aligned}
 v+w&=O\\
 v+w&=v+(-v)\\
 w&=-v
 \end{aligned}$$
 \item \textbf{Exercise 5}
-\label{sec:org0d5f0fb}
+\label{sec:org0b84187}
 $$\begin{aligned}
 v+w&=v\\
 v+(-v)+w&=v+(-v)\\
@@ -120,7 +120,7 @@ O+w&=O
 \end{aligned}$$
 Since \(\forall u, O+u=u\), we have \(w=O\).
 \item \textbf{Exercise 6}
-\label{sec:org051acf4}
+\label{sec:org25e5703}
 
 Let \(W=\{B| B\cdot A_{1}=O\ \text{and}\ B\cdot A_2=O\}\). Specifically, it is clear that \(O\in W\) as \(O\cdot A = \sum\limits_{i=1}^{n} b_i a_i=\sum\limits_{i=1}^{n} 0\times a_i=0\).\\
 Let \(v_1,v_2 \in W\) such that \(v_1\cdot A_1=0\), \(v_1\cdot A_2=0\), \(v_2\cdot A_1=0\), \(v_2\cdot A_2=0\). Thus,
@@ -136,54 +136,120 @@ $$\begin{aligned}
 \end{aligned}$$.
 It is easy to show for \(A_2\) then. Therefore, \((v_1+v_2)\in W\).
 \item \textbf{Exercise 7}
-\label{sec:org9be4235}
+\label{sec:org6820a3f}
 Same to apply as Exercise 6.
 \item \textbf{Exercise 8}
-\label{sec:orgc111c5e}
+\label{sec:org976389b}
 
 Name the set as \(W\).
 \begin{enumerate}
 \item Proof
-\label{sec:org74372c0}
+\label{sec:org37a5666}
 
 \(v_1+v_2=(x_1+x_2,y_1+y_2), x_1+x_2=y_1+y_2 \Rightarrow (v_1+v_2)\in W\) \\
 \(cv=(cx,cy), cx=cy \Rightarrow cv\in W\) \\
 \(O=(0,0)\in W\)
 \item Proof
-\label{sec:org87bc590}
+\label{sec:orgbff7018}
 See Part (a).
 \item Proof
-\label{sec:org65f7497}
+\label{sec:org018c432}
 Same technique as in Part (a).
 \end{enumerate}
 \item \textbf{Exercise 9}
-\label{sec:orgb41d968}
+\label{sec:org5375be5}
 See Exercise 8.
 \item \textbf{Exercise 10}
-\label{sec:org8fc6f44}
+\label{sec:orgd77ec6a}
 
 For \(U\cap W\), let \(v_1,v_2\in U\cap W\). Since \(v_1, v_2\in U\) and \(U\) is a subspace, \(v_1+v_2\in U\). In same way, we can see that \(v_{1}+v_2\in W\). Thus, \(v_1+v_2\in U\cap W\).\\
 Since \(v_1\in U\), \(cv_1\in U\). Also, it shows \(cv_1\in W\) in the same way. Thus, \(cv_{1}\in U\cap W\).
 Because \(U, W\) are subspaces, \(O\in U\) and \(O\in W\). Thus, \(O\in U\cap W\). Therefore, \(U\cap W\) is a subspace.\\
-Refer to the \hyperref[org204a34a]{note part} for proof for \(U+W\).
+Refer to the \hyperref[org72f045b]{note part} for proof for \(U+W\).
 \item \textbf{Exercise 11}
-\label{sec:org69fe9a0}
+\label{sec:org2cf4917}
 Since \(L\) is a field, \textbf{VS1, VS3, VS4, VS8} are established under field axioms, and multiplication and addition are closed in \(L\). For \textbf{VS5, VS6, VS7}, they are all valid as \(K\subset L\). \(O\) is simply \(0\), and \(1\cdot u=u\) is  established in \(L\).
 \item \textbf{Exercise 12}
-\label{sec:org3299612}
+\label{sec:orge27b6e7}
 
 For \(x,y\in K\), we have\\
 \(x+y=a_1+b_1\sqrt{2}+a_2+b_2\sqrt{2}=(a_1+a_2)+(b_1+b_2)\sqrt{2}\). Since \(a_1,b_1,a_2,b_2\in \mathbb{Q}\), \((a_1+a_2),(b_1+b_2)\in\mathbb{Q}\). Thus, \(x+y\in K\).\\
 \(xy=(a_1 a_2+ 2b_1 b_2)+(a_2 b_1 + a_1 b_2)\times \sqrt{2}\). Since \(a_1,b_1,a_2,b_2\in \mathbb{Q}\), \((a_1 a_2+ 2b_1 b_2),(a_2 b_1 + a_1 b_2)\in\mathbb{Q}\). Thus, \(x+y\in K\).\\
 \(-x=-a+-b\sqrt{2}\). Since \(a,b\in\mathbb{Q}\), \(-a,-b\in\mathbb{Q}\). Thus, \(-x\in K\).\\
-\(x^{-1}=\frac{1}{a+b\sqrt{2}}=\frac{a+b\sqrt{2}}{a^2-2b^{2}}=\frac{a}{a^2-2b^2}+\frac{b}{a^2-2b^2}\sqrt{2}\). It is easy to see that \textbf{new} \(a,b\in\mathbb{Q}\) as \(a,b\in\mathbb{Q}\). Thus, \(x^{-1}\in K\).
+If \(a+b\sqrt{2}\not = 0\), \(a,b\not = 0\), and \(a-b\sqrt{2}\not = 0\). Thus, \(x^{-1}=\frac{1}{a+b\sqrt{2}}=\frac{a-b\sqrt{2}}{a^2-2b^{2}}=\frac{a}{a^2-2b^2}-\frac{b}{a^2-2b^2}\sqrt{2}\). It is easy to see that \textbf{new} \(a,b\in\mathbb{Q}\) as \(a,b\in\mathbb{Q}\). Thus, \(x^{-1}\in K\).
 Specifically, if \(a=b=0\), \(0\in\mathbb{Q}\). If \(a=1,b=0\), \(1\in\mathbb{Q}\).\\
 Thus, \(K\) is a field.
 \item \textbf{Exercise 13}
-\label{sec:orgd40d145}
+\label{sec:org69c1822}
 Same technique as Exercise 12.
 \item \textbf{Exercise 14}
-\label{sec:org7f868a3}
-Same technique as Exercise 12. Be careful that \(\gamma=\pm \sqrt{c}\).
+\label{sec:org3afcb70}
+Same technique as Exercise 12.
+\end{enumerate}
+\subsection{\(\S\) 2}
+\label{sec:orgf561e40}
+\subsubsection{Exercises}
+\label{sec:orgc385dfb}
+\begin{enumerate}
+\item \textbf{Exercise 1}
+\label{sec:org7b2a7ed}
+Using result from \hyperref[org5ea3f40]{\textbf{Exercise 4}}, easy to prove.
+\item \textbf{Exercise 2}
+\label{sec:org34f2a89}
+\begin{enumerate}
+\item \((1,-1)\)
+\label{sec:org9ad4164}
+\item \((\frac{1}{2},\frac{3}{2})\)
+\label{sec:orgab5393a}
+\item \((1,1)\)
+\label{sec:org58c49b0}
+\item \((3,2)\)
+\label{sec:org293b197}
+\end{enumerate}
+\item \textbf{Exercise 3}
+\label{sec:org5a0a83a}
+Same technique as in \textbf{Exercise 2}.
+\item \textbf{Exercise 4}
+\label{sec:orgbe7743b}
+\label{org5ea3f40}
+
+Following set of equations is an equivalent of \(x(a,b)+y(c,d)=O\),
+$$\begin{aligned}
+ax+cy&=0 && (1)\\
+bx+dy&=0 && (2)\\
+\end{aligned}$$
+$$\begin{aligned}
+(1)\times d-(2)\times c\Rightarrow (ad-cb)x+cdy-cdy &= 0\\
+(ad-cb)x&=0\\
+\end{aligned}$$
+For \(ad-cb\not =0\) part, clearly we shall see that \(x=0\) as \((ad-cb)x=0\). Plugging \(x\) back to \((1)\), we get \(y=0\). Thus, two vectors are linear independent.\\
+For \(ad-cb=0\) part, we need to prove that \(x(a,b)+y(c,d)=O\) has solution other than \(x=y=0\).\\
+First, suppose \(a,b,c,d\not = 0\). Since \(ad-cb=0\), \(x\in \mathbb{R}\). By applying technique, we could also show \(y\in \mathbb{R}\). Thus, \((a,b),\ (c,d)\) are linear independent.\\
+If \(a,b,c,d\not = 0\) does \textbf{NOT} hold. Without lose of generality (for all the possibilities, \(a,d\) and \(c.b\) are interchangeable), consider following scenarios in a \(xy\) -plane,
+\begin{enumerate}
+\item \(a=0,c=0\)
+\label{sec:org5641b55}
+
+If \(a=c=0\), \(x,y\in \mathbb{R}\) in \((1)\). Because the \((2)\) is a line in the plane, there must exist some \(x,y\not = 0\).
+\item \(a=0,b=0,c=0\)
+\label{sec:orgfc98c1d}
+
+Same argument as above, despite the line represented by \((2)\) is a little bit peculiar (it is \(y=0\)).
+\item \(a=0,d=0,c=0\)
+\label{sec:org3e319bb}
+
+Same argument as the first, despite the line represented by \((2)\) is a little bit peculiar (it is \(x=0\)).
+\item \(a=0,d=0,b=0,c=0\)
+\label{sec:org3e537d8}
+
+Both \((1), (2)\) represent the whole plane, thus, \(x,y\in \mathbb{R}\).
+\end{enumerate}
+\item \textbf{Exercise 9}
+\label{sec:orgec7034a}
+$$\begin{aligned}
+\sum\limits_{i=1}^{r} [a_i\cdot (A_i\cdot \sum\limits_{j=i+1}^{r}A_{j})]&=O && \text{All vectors are mutually perpendicular}\\
+&=\sum\limits_{i=1}^{r} [(a_i\cdot A_i)\cdot \sum\limits_{j=i+1}^{r}A_{j}]\\
+\end{aligned}$$
+Since \(\forall A\in \{A_i\}, A\not = O\), it is only possible that every \(a\) is \(0\). Thus, \({A_i}\) are linearly independent.
 \end{enumerate}
 \end{document}
