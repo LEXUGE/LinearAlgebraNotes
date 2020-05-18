@@ -1,4 +1,4 @@
-% Created 2020-05-18 Mon 21:24
+% Created 2020-05-18 Mon 21:29
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,15 +31,15 @@
 \maketitle
 \tableofcontents \clearpage
 \section{Chapter 1}
-\label{sec:org8585f56}
+\label{sec:orgf1e48e3}
 \subsection{\(\S\) 1}
-\label{sec:org03503c6}
+\label{sec:orga8c254e}
 \subsubsection{Notes}
-\label{sec:orgfbc572f}
+\label{sec:org36915c6}
 A generic vector space \(V\) is not a field because there is no definition of \(v^{-1}\) for some \(v\in V\), fulfilling not the definition of a field.\\
 \begin{enumerate}
 \item \textbf{Pg. 4 Proof of \((-1)v=v\)}
-\label{sec:org13055dd}
+\label{sec:org1287ffe}
 $$\begin{aligned}
 (-1)v+v&=(-1)v+1\cdot v\\
 &=(-1+1)v\\
@@ -47,7 +47,7 @@ $$\begin{aligned}
 \end{aligned}$$
 Thus, \((-1)v=-v\).
 \item \textbf{Pg. 6 Proof of SP 3}
-\label{sec:orga2af5dc}
+\label{sec:org339b244}
 $$\begin{aligned}
 (xA)\cdot B&=\sum\limits_{i=1}^{n}(xa_i) b_{i}\\
 &=\sum\limits_{i=1}^{n}x(a_i b_{i})\\
@@ -59,7 +59,7 @@ A\cdot (xB)&=\sum\limits_{i=1}^{n}a_i (xb_{i})\\
 &=x(A\cdot B)
 \end{aligned}$$
 \item \textbf{\textbf{Pg. 7}}
-\label{sec:org5c4500e}
+\label{sec:org0a67369}
 
 Upper one:
 $$\begin{aligned}
@@ -70,9 +70,9 @@ $$\begin{aligned}
 Bottom one:
 Since \(K\) is a field, all \textbf{VS} s regarding summation or product of functions are actually closed on \(K\). By applying field axioms, \(V\) is then a vector space over \(K\).
 \item \textbf{\textbf{Pg. 9}}
-\label{sec:orgbc0dac1}
+\label{sec:org0254427}
 
-\label{org087c9e9}
+\label{orgbb25052}
 Let \(a_1=(u_1+w_1),a_2=(u_2+w_2)\). Both of them \(\in (U+W)\).\\
 Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \(u_1,w_1,u_2,w_2\in V\), moreover, \((U+W)\subset V\).\\
 \(a_1+a_2=(u_1+u_2)+(w_1+w_2)\in (U+W)\) \\
@@ -80,13 +80,13 @@ Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \
 Since \(O\in U\) and \(O\in W\), \(O=O+O\in (U+W)\). Thus, \((U+W)\) is a subspace of \(V\).
 \end{enumerate}
 \subsubsection{Exercises}
-\label{sec:org67a4466}
+\label{sec:org76f1b02}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:org0122d1f}
+\label{sec:orgaddf7bf}
 Let \(v\in{} V\), \(c[v+(-v)]=cv+c(-v)=cv+(-c)v=v\cdot{}0=v\cdot{}(1-1)=v+(-v)=O\)
 \item \textbf{Exercise 2}
-\label{sec:org7a37c4a}
+\label{sec:orgbac9e9c}
 Since \(c\not = 0\)
 $$\begin{aligned}
 O&=cv+[-(cv)]\\
@@ -100,19 +100,19 @@ v-v&=v\\
 O&=v
 \end{aligned}$$
 \item \textbf{Exercise 3}
-\label{sec:orgb372df7}
+\label{sec:orgc3c226e}
 
 \(\forall g\in V, (g+f)(x) = g(x)+f(x) = f(x)+g(x) = (f+g)(x) \Rightarrow g+f = f+g\).\\
 If \(O+u = u\), \((O+u)(x) = O(x)+u(x)= u(x)\). Therefore, \(O(x)=0\).
 \item \textbf{Exercise 4}
-\label{sec:org271def6}
+\label{sec:orge0a3486}
 $$\begin{aligned}
 v+w&=O\\
 v+w&=v+(-v)\\
 w&=-v
 \end{aligned}$$
 \item \textbf{Exercise 5}
-\label{sec:org4ee75e9}
+\label{sec:orgfe3fb0c}
 $$\begin{aligned}
 v+w&=v\\
 v+(-v)+w&=v+(-v)\\
@@ -120,7 +120,7 @@ O+w&=O
 \end{aligned}$$
 Since \(\forall u, O+u=u\), we have \(w=O\).
 \item \textbf{Exercise 6}
-\label{sec:org20cd58c}
+\label{sec:org4806b4c}
 
 Let \(W=\{B| B\cdot A_{1}=O\ \text{and}\ B\cdot A_2=O\}\). Specifically, it is clear that \(O\in W\) as \(O\cdot A = \sum\limits_{i=1}^{n} b_i a_i=\sum\limits_{i=1}^{n} 0\times a_i=0\).\\
 Let \(v_1,v_2 \in W\) such that \(v_1\cdot A_1=0\), \(v_1\cdot A_2=0\), \(v_2\cdot A_1=0\), \(v_2\cdot A_2=0\). Thus,
@@ -136,41 +136,41 @@ $$\begin{aligned}
 \end{aligned}$$.
 It is easy to show for \(A_2\) then. Therefore, \((v_1+v_2)\in W\).
 \item \textbf{Exercise 7}
-\label{sec:org4fe550f}
+\label{sec:org9f57126}
 Same to apply as Exercise 6.
 \item \textbf{Exercise 8}
-\label{sec:org0c4f4aa}
+\label{sec:org1f40266}
 
 Name the set as \(W\).
 \begin{enumerate}
 \item Proof
-\label{sec:org7ecd2b4}
+\label{sec:org40fb962}
 
 \(v_1+v_2=(x_1+x_2,y_1+y_2), x_1+x_2=y_1+y_2 \Rightarrow (v_1+v_2)\in W\) \\
 \(cv=(cx,cy), cx=cy \Rightarrow cv\in W\) \\
 \(O=(0,0)\in W\)
 \item Proof
-\label{sec:orgb2b8a5a}
+\label{sec:org5b749db}
 See Part (a).
 \item Proof
-\label{sec:org928cb69}
+\label{sec:org4906489}
 Same technique as in Part (a).
 \end{enumerate}
 \item \textbf{Exercise 9}
-\label{sec:org62693ca}
+\label{sec:org2a84b65}
 See Exercise 8.
 \item \textbf{Exercise 10}
-\label{sec:org3182060}
+\label{sec:orgb29c534}
 
 For \(U\cap W\), let \(v_1,v_2\in U\cap W\). Since \(v_1, v_2\in U\) and \(U\) is a subspace, \(v_1+v_2\in U\). In same way, we can see that \(v_{1}+v_2\in W\). Thus, \(v_1+v_2\in U\cap W\).\\
 Since \(v_1\in U\), \(cv_1\in U\). Also, it shows \(cv_1\in W\) in the same way. Thus, \(cv_{1}\in U\cap W\).
 Because \(U, W\) are subspaces, \(O\in U\) and \(O\in W\). Thus, \(O\in U\cap W\). Therefore, \(U\cap W\) is a subspace.\\
-Refer to the \hyperref[org087c9e9]{note part} for proof for \(U+W\).
+Refer to the \hyperref[orgbb25052]{note part} for proof for \(U+W\).
 \item \textbf{Exercise 11}
-\label{sec:org2b77c9f}
+\label{sec:org03a2e49}
 Since \(L\) is a field, \textbf{VS1, VS3, VS4, VS8} are established under field axioms, and multiplication and addition are closed in \(L\). For \textbf{VS5, VS6, VS7}, they are all valid as \(K\subset L\). \(O\) is simply \(0\), and \(1\cdot u=u\) is  established in \(L\).
 \item \textbf{Exercise 12}
-\label{sec:org3fd5496}
+\label{sec:org32c6190}
 
 For \(x,y\in K\), we have\\
 \(x+y=a_1+b_1\sqrt{2}+a_2+b_2\sqrt{2}=(a_1+a_2)+(b_1+b_2)\sqrt{2}\). Since \(a_1,b_1,a_2,b_2\in \mathbb{Q}\), \((a_1+a_2),(b_1+b_2)\in\mathbb{Q}\). Thus, \(x+y\in K\).\\
@@ -180,17 +180,17 @@ If \(a+b\sqrt{2}\not = 0\), \(a,b\not = 0\), and \(a-b\sqrt{2}\not = 0\). Thus, 
 Specifically, if \(a=b=0\), \(0\in\mathbb{Q}\). If \(a=1,b=0\), \(1\in\mathbb{Q}\).\\
 Thus, \(K\) is a field.
 \item \textbf{Exercise 13}
-\label{sec:org8672eae}
+\label{sec:org519a5b5}
 Same technique as Exercise 12.
 \item \textbf{Exercise 14}
-\label{sec:org451df8f}
+\label{sec:orgbea924e}
 Same technique as Exercise 12.
 \end{enumerate}
 \subsection{\(\S\) 2}
-\label{sec:org4cba6f3}
+\label{sec:org2a259d6}
 \subsubsection{Notes}
-\label{sec:orgfd5ef8f}
-\label{org07ba6ef}
+\label{sec:orgcde85bf}
+\label{org8baa3fd}
 Another quite helpful equivalent of definition of linear independence is that (stated following without loss of generality)
 $$\forall a_1\not = 0,a_1 v_1\not =\sum\limits_{i=2}^n a_i$$
 Here is the \emph{proof} of equivalence between above statement and definition of linear independence.\\
@@ -204,36 +204,36 @@ O&\not = (-\lambda)v_1 + \sum\limits_{i=2}^n \frac{\lambda a_i}{a_1}v_i && \lamb
 \(\lambda\) and \(a_i\) could be arbitrary, thus from above we could conclude that \(a'_1 v_1\not =\sum\limits_{i=2}^n a'_i\) if and only if all \(a'=0\), which is the definition of linear independence.\\
 Also, another point that worth paying attention to is that generators could be \textbf{linear dependent}. This is true because you could put arbitrary vectors at the end of a basis of a vector space and just set coefficients for these extraneous vectors when it is producing new linear combinations.
 \subsubsection{Exercises}
-\label{sec:orgcca110e}
+\label{sec:org9e17189}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:orge886843}
-Using result from \hyperref[org1577da4]{\textbf{Exercise 4}}, easy to prove.
+\label{sec:orgb2b5a8b}
+Using result from \hyperref[org023232a]{\textbf{Exercise 4}}, easy to prove.
 \item \textbf{Exercise 2}
-\label{sec:orgf051324}
+\label{sec:org2dbf827}
 \begin{enumerate}
 \item \((1,-1)\)
-\label{sec:org9990ca1}
+\label{sec:orgf46329e}
 \item \((\frac{1}{2},\frac{3}{2})\)
-\label{sec:org34a282e}
+\label{sec:org4735997}
 \item \((1,1)\)
-\label{sec:org868d702}
+\label{sec:org16b0ee6}
 \item \((3,2)\)
-\label{sec:org031b5df}
+\label{sec:org95585cb}
 \end{enumerate}
 \item \textbf{Exercise 3}
-\label{sec:org17af3fe}
+\label{sec:org6fea0a5}
 \begin{enumerate}
 \item \((\frac{1}{3},-\frac{1}{3},\frac{1}{3})\)
-\label{sec:orgc6b7f4d}
+\label{sec:org565f82f}
 \item \((1,0,1)\)
-\label{sec:org4809b75}
+\label{sec:org9205270}
 \item \((\frac{1}{3},-\frac{1}{3},-\frac{2}{3})\)
-\label{sec:org44b7aca}
+\label{sec:org43caa30}
 \end{enumerate}
 \item \textbf{Exercise 4}
-\label{sec:org4cdfa23}
-\label{org1577da4}
+\label{sec:orgb09f960}
+\label{org023232a}
 
 Following set of equations is an equivalent of \(x(a,b)+y(c,d)=O\),
 $$\begin{aligned}
@@ -250,24 +250,24 @@ First, suppose \(a,b,c,d\not = 0\). Since \(ad-cb=0\), \(x\in \mathbb{R}\). By a
 If \(a,b,c,d\not = 0\) does \textbf{NOT} hold. Without lose of generality (for all the possibilities, \(a,d\) and \(c.b\) are interchangeable), consider following scenarios in a \(xy\) -plane,
 \begin{enumerate}
 \item \(a=0,c=0\)
-\label{sec:org7bdbe35}
+\label{sec:org81a8147}
 
 If \(a=c=0\), \(x,y\in \mathbb{R}\) in \((1)\). Because the \((2)\) is a line in the plane, there must exist some \(x,y\not = 0\).
 \item \(a=0,b=0,c=0\)
-\label{sec:orgb2866c8}
+\label{sec:org2abe186}
 
 Same argument as above, despite the line represented by \((2)\) is a little bit peculiar (it is \(y=0\)).
 \item \(a=0,d=0,c=0\)
-\label{sec:orgb9217e8}
+\label{sec:orga15d629}
 
 Same argument as the first, despite the line represented by \((2)\) is a little bit peculiar (it is \(x=0\)).
 \item \(a=0,d=0,b=0,c=0\)
-\label{sec:org996cd08}
+\label{sec:org81c2545}
 
 Both \((1), (2)\) represent the whole plane, thus, \(x,y\in \mathbb{R}\).
 \end{enumerate}
 \item \textbf{Exercise 5,6}
-\label{sec:orge679342}
+\label{sec:orgdc6604f}
 
 To correctly understand how could functions be elements(vectors) in vector space, we need to understand that function \(f:S\rightarrow K\) is essentially a set of pairs \((s,k),\forall s\in S\). Functions have scalar multiplication and addition defined.\\
 \(f+g\) is defined as \(\{(s,f(s)+g(s))|s\in S\}\), and \(cf, c\in K\) is defined as \(\{(s,c\cdot f(s))|s\in S\}\).\\
@@ -281,20 +281,20 @@ $$\forall t,a+bt=0$$
 Above conversion is quite helpful since we could put in arbitrary \(t\) and the equation should holds. Thus, we could put in particular values of \(t\) to \textbf{construct} set of equations to show that \(a=b=0\). For example, here we plug in \(t=0\), then \(a=0\), and if we plug back \(a=0\) into original equation with \(t=0\) again, \(b=0\).\\
 This method could be used throughout \textbf{Exercise 5,6}.
 \item \textbf{Exercise 7}
-\label{sec:org63b32f4}
+\label{sec:org435645d}
 \((3,5)\)
 \item \textbf{Exercise 8}
-\label{sec:orgbc59fed}
+\label{sec:org256a5a6}
 \emph{\textbf{Calculus involved, not doing now.}}
 \item \textbf{Exercise 9}
-\label{sec:orgefb2fe6}
+\label{sec:org7c1a060}
 $$\begin{aligned}
 \sum\limits_{i=1}^{r} [a_i\cdot (A_i\cdot \sum\limits_{j=i+1}^{r}A_{j})]&=O && \text{All vectors are mutually perpendicular}\\
 &=\sum\limits_{i=1}^{r} [(a_i\cdot A_i)\cdot \sum\limits_{j=i+1}^{r}A_{j}]\\
 \end{aligned}$$
 Since \(\forall A\in \{A_i\}, A\not = O\), it is only possible that every \(a\) is \(0\). Thus, \({A_i}\) are linearly independent.
 \item \textbf{Exercise 10}
-\label{sec:org9ab5003}
+\label{sec:org5d2cbf8}
 
 Since \(v,w\) are linear dependent, for
 $$nv+mw=O$$
@@ -302,18 +302,18 @@ at least one of \(n,m\not =0\).
 Consider following scenarios, we can see that there would be \(a=0\) or \(a=-\frac{n}{m}\).
 \begin{enumerate}
 \item \(n=0,m\not =0 \Rightarrow w=O\)
-\label{sec:org8ce15c5}
+\label{sec:orge3ab517}
 \item \(n\not =0,m =0 \Rightarrow v=O\).
-\label{sec:orgfddc121}
+\label{sec:org6b086f0}
 This contradicts with \(v\not =O\) in problem. Thus, this is impossible.
 \item \(n\not = 0, m\not =0 \Rightarrow w=\frac{-n}{m}v\)
-\label{sec:orgdfd9b21}
+\label{sec:org93c76c2}
 \end{enumerate}
 \end{enumerate}
 \subsection{\(\S\) 3}
-\label{sec:org7782f83}
+\label{sec:org7833fc5}
 \subsubsection{Notes}
-\label{sec:orgd6a7b71}
+\label{sec:orgf969dde}
 This subsection comprises a lot of concise proofs. But in conclusion, we need to know that
 $$\begin{aligned}
 \text{Basis}&\Leftrightarrow \text{Maximal linear independent vector set} && \text{proof at }\bold{Theorem 3.1}\\
@@ -322,16 +322,16 @@ $$\begin{aligned}
 \end{aligned}$$
 Thus, all possible bases of a vector space \(V\) are of one and only one possible number of elements, which is equal to the one of maximal independent vector set.
 \subsection{\(\S\) 4}
-\label{sec:org56c71e6}
+\label{sec:org00c714d}
 \subsubsection{Notes}
-\label{sec:org5fd2c5d}
+\label{sec:orgcd748b6}
 \emph{Proof} for $$\dim (U\times W)=\dim U+\dim W$$
 Because \(\forall u\in (U\times W) ,(O_u+O_w)+u=u+(O_u+O_w)=u\). Thus, by definition, \(O=(O_u,O_w)\).\\
 Let \(A=\{u_i\}\) be a basis of \(U\) and \(B=\{w_i\}\) be a basis of \(W\). Note the dimension of \(U,W\) as \(n,m\) respectively. Let $$C=\{(u_i,0)|u_i\in A\}\cup\{(0,w_i)|w_i\in B\}$$
 Since there would be no intersection between two sets being union above, the number of elements in \(C\) is \(n+m\).
 If we could show that \(C\) is a basis of \(U\times W\), then we could show the original statement.\\
 First we need to show that all elements in \(C\) is linear independent. This means \(a_i\in K,c_i\in C\)
-$$\sum\limits_{i=1}^{n+m}a_i c_i$$
+$$\sum\limits_{i=1}^{n+m}a_i c_i=O$$
 if and only if all the \(a_i=0\).\\
 Because multiplication by scalar and addition for \(U\times W\) is defined componentwise, we shall see that (if we keep the "order" of elements in \(C\) as \(A\) and \(B\) are merged)
 $$\begin{aligned}
@@ -348,27 +348,27 @@ and
 $$\{(u_i,0)|u_i\in A\}\cup\{(0,w_i)|w_i\in B\}$$
 is a basis for \(U\times W\).\\
 \subsubsection{Exercises}
-\label{sec:orga7bdb8f}
+\label{sec:org94305b3}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:orgd9e05e9}
+\label{sec:org166958c}
 
 For the first part, we need to show that \(\forall v\in V, \exists \text{ unique } u\in U, w\in W: v=u+w\). Since \((2,1)\) and \((0,1)\) are linear independent, they are a basis of \(V=\mathbb{R}^2\). This means
 $$\forall v\in V, \exists \text{ unique } a,b\in K: v=a\cdot (2,1)+b\cdot (0,1)$$
 Thus, just set \(u=a\cdot (2,1)\) and \(w=b\cdot (0,1)\), and we have proved it.\\
 It is same for \((2,1)\) and \((1,1)\).
 \item \textbf{Exercise 2}
-\label{sec:orgf2b8f66}
+\label{sec:orgc7011ad}
 
 Since \((1,0,0), (1,1,0), (0,1,1)\) are linear independent, we obtain that
 $$\forall v\in V, \exists \text{ unique } a,b,c\in K: v=a\cdot (1,0,0)+b\cdot (1,1,0)+ c\cdot (0,1,1)$$
 Set \(u=a\cdot (1,0,0)\) and \(w=b\cdot (1,1,0)+ c\cdot (0,1,1)\), it would be proved.
 \item \textbf{Exercise 3}
-\label{sec:orgf87cd50}
-According to argument provided \hyperref[org07ba6ef]{here}, \(\forall c\in K,cA\not =B\) means that \(A,B\) are linear independent. Also, according to \textbf{Theorem 3.4}, they are a basis of \(\mathbb{R}^2\).\\
+\label{sec:orgce4b716}
+According to argument provided \hyperref[org8baa3fd]{here}, \(\forall c\in K,cA\not =B\) means that \(A,B\) are linear independent. Also, according to \textbf{Theorem 3.4}, they are a basis of \(\mathbb{R}^2\).\\
 Based on the similar argument in \textbf{Exercise 1}, second part could be proved.
 \item \textbf{Exercise 4}
-\label{sec:org28c7826}
+\label{sec:org6de2949}
 See notes
 \end{enumerate}
 \end{document}

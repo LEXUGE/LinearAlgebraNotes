@@ -234,7 +234,7 @@ Let $A=\{u_i\}$ be a basis of $U$ and $B=\{w_i\}$ be a basis of $W$. Note the di
 Since there would be no intersection between two sets being union above, the number of elements in $C$ is $n+m$.
 If we could show that $C$ is a basis of $U\times W$, then we could show the original statement.\\
 First we need to show that all elements in $C$ is linear independent. This means $a_i\in K,c_i\in C$
-$$\sum\limits_{i=1}^{n+m}a_i c_i$$
+$$\sum\limits_{i=1}^{n+m}a_i c_i=O$$
 if and only if all the $a_i=0$.\\
 Because multiplication by scalar and addition for $U\times W$ is defined componentwise, we shall see that (if we keep the "order" of elements in $C$ as $A$ and $B$ are merged)
 $$\begin{aligned}
