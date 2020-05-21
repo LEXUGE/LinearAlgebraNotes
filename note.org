@@ -28,6 +28,7 @@ A\cdot (xB)&=\sum\limits_{i=1}^{n}a_i (xb_{i})\\
 \end{aligned}$$
 **** **Pg. 7**
 \\
+<<(a+b)^2>>
 Upper one:
 $$\begin{aligned}
 (A+B)^2&=(A+B)\cdot (A+B)\\
@@ -195,7 +196,7 @@ For example, we need to show that $f(s)=1$ and $g(s)=t$ are linear independent. 
 $$af+bg=O$$
 which is an equivalent of
 $$\forall t,a+bt=0$$
-Above conversion is quite helpful since we could put in arbitrary $t$ and the equation should holds. Thus, we could put in particular values of $t$ to *construct* set of equations to show that $a=b=0$. For example, here we plug in $t=0$, then $a=0$, and if we plug back $a=0$ into original equation with $t=0$ again, $b=0$.\\
+Above conversion is quite helpful since we could put in arbitrary $t$ and the equation should hold. Thus, we could put in particular values of $t$ to *construct* set of equations to show that $a=b=0$. For example, here we plug in $t=0$, then $a=0$, and if we plug back $a=0$ into original equation with $t=0$ again, $b=0$.\\
 This method could be used throughout *Exercise 5,6*.
 **** *Exercise 7*
 $(3,5)$
@@ -267,3 +268,442 @@ According to argument provided [[linear-independence-equivalence][here]], $\fora
 Based on the similar argument in *Exercise 1*, second part could be proved.
 **** *Exercise 4*
 See notes
+* Chapter 2
+** $\S$ 1
+*** Exercises
+**** *Exercise 1*
+Skip
+**** *Exercise 2*
+Skip
+**** *Exercise 3*
+Skip
+**** *Exercise 4*
+Skip
+**** *Exercise 5*
+Let $C=^t(A+B)=(c_{ij})$. Then, $c_{ij}=(a_{ij}+b_{ij})'=a_{ji}+b_{ji}$. Thus, $C=^tA+^tB$.
+**** *Exercise 6*
+Let $B=^t(cA)$. Then, $b_{ij}=ca_{ji}$. Since $^tA=(a^{\prime}_{ij})=(a_{ji})=A$, $B=c^tA$.
+**** *Exercise 7*
+No difference.
+**** *Exercise 8*
+Skip
+**** *Exercise 9*
+Skip
+**** *Exercise 10*
+Let $B=A+^tA=(b_{ij})=(a_{ij}+a_{ji})$. Since, $b_{ij}=a_{ij}+a_{ji}=a_{ji}+b_{ij}=b_{ji}$, $B$ is symmetric.
+**** *Exercise 11*
+Skip
+**** *Exercise 12*
+Skip
+**** *Exercise 13*
+\\
+*For followings, we mean ones in /Exercises on Dimension/ section*.\\
+Followings are linear independent.
+$$U_1=\begin{pmatrix}
+   1 & 0 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_2=\begin{pmatrix}
+   0 & 1 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_3=\begin{pmatrix}
+   0 & 0 \\
+   1 & 0
+\end{pmatrix}$$
+$$U_4=\begin{pmatrix}
+   0 & 0 \\
+   0 & 1
+\end{pmatrix}$$
+Apply $a\cdot U_1+b\cdot U_2+c\cdot U_3+d\cdot U_4=O$ to verify it.
+Because it generates the matrix vector space $Mat_{2\times 2}K$ over K (For every $v\in Mat_{2\times 2}K$, simply let $a,b,c,d$ be $v$'s components) and $\{U_i\}$ are linear independent, $\{U_i\}$ is a basis of $Mat_{2\times 2}K$.\\
+Because the number of elements in a basis is the dimension of the vector space, we see that the dimension of it is 4.
+**** *Exercise 14*
+Similar argument to *Exercise 13*. Dimension of it is $mn$.
+**** *Exercise 15*
+Dimension of it is $n$. Simply build up a basis to see.
+**** *Exercise 16*
+Similarly, dimension of it is $\frac{(n+1)n}{2}$.
+**** *Exercise 17*
+\\
+Basis is a set comprises
+$$U_1=\begin{pmatrix}
+   1 & 0 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_2=\begin{pmatrix}
+   0 & 1 \\
+   1 & 0
+\end{pmatrix}$$
+$$U_3=\begin{pmatrix}
+   0 & 0 \\
+   0 & 1
+\end{pmatrix}$$
+Then, it is easy to see that dimension is 3.
+**** *Exercise 18*
+Basis similar to the one in *Exercise 17* is linear independent and generates space. And, indeed, the number of elements in the basis is the same as one in *Exercise 16*. Thus, dimension of it is $\frac{n(n+1)}{2}$.
+**** *Exercise 19*
+Same as *Exercise 15*.
+**** *Exercise 20*
+\\
+Let $U$ be the subspace of $V$. There would be a maximal number $m$ of linear independent vectors (*Theorem 3.1* in chapter 1). Suppose the number $m> \dim V$. Then it would contradicts *Theorem 3.1* in chapter 1 as any number of vectors more than $\dim V$ would be linear dependent, which means the basis of $U$ would be linear dependent (remember $U$ is a subspace of $V$). Thus, $m\leq \dim V$.\\
+Dimension could be $0,1,2$.
+**** *Exercise 21*
+\\
+According to the lemma we proved in *Exercise 20*, dimension of subspace of $\mathbb{R}^{3}$ could be $0,1,2,3$.
+** $\S$ 2
+*** Notes
+*Lemma* Let $A$ be a set of linear dependent vectors that generates $V$. Then, for all $v\in V$, there exists infinite linear combinations of $A$ that form $v$.\\
+/Proof/ Say that number of vectors in $A$ is $n$. Since $A$ generates $V$, $\forall v\in V, \exists \{a_i\}: v=\sum\limits_{i=1}^n a_i A_i$. Let $L$ be a set of linear combinations that form $v$ (here $L$ is a set of sets). We have
+$$\begin{aligned}
+v&=\sum\limits_{i=1}^n a_iA_i+O\\
+&=\sum\limits_{i=1}^n a_iA_i+\sum\limits_{i=1}^n b_iA_i\\
+&=\sum\limits_{i=1}^n (a_i+b_i) A_i
+\end{aligned}$$
+Since $A$ is linear dependent, there exists $\{b_i\}$ where not every element is $0$. Therefore, $\{a_i+b_i\}\in L$ and $\{a_i+b_i\}\not = \{a_i\}$ for some $\{b_i\}$.\\
+This means that $\forall \ell \in L$, we can always form a new $\ell^{\prime}\in L$. And since for all $v\in V$ we always have one linear combination, we can do it infinitely, which means number of elements in $L$ is infinite. Therefore, we have shown what was to be shown. $\blacksquare$ \\
+Here we discuss the number of solutions for general linear equations. ($A$ is a $m\times n$ matrix. $X$ is a $n\times 1$ column matrix. $B$ is a $m\times 1$ column matrix).
+$$AX=B$$
+If $n>m$, according to *Theorem 3.1 in chapter 1*, they must be linear dependent, resulting in infinite number of solutions because of *Lemma* above.\\
+If $n=m$ and they are linear independent (it is then a basis because they are maximal independent vectors), there would only be one solution as *Theorem 2.1 in chapter 1* stated. If they are linear dependent and $B$ is in the subspace generated by column vectors of $A$, there would be infinite number of solutions (*Lemma*), else the equations are not solvable (there exists no linear combination to represent $B$).\\
+If $n<m$ and they are independent and $B$ is in the subspace generated by column vectors of $A$, there would be only one solution. If they are linear independent but $B$ is not in subspace, then it is unsolvable. If they are linear dependent and $B$ is in subspace, infinite solutions occur. If they are linear dependent but $B$ is not in subspace, equations are not solvable.\\
+In general,
+***** If $B$ is in the vector space generated by column vectors of $A$ and they are linear independent, there exists one unique solution.
+***** If $B$ is in the vector space generated by column vectors of $A$ and they are linear dependent, there exists infinite solutions.
+***** If $B$ is not in the vector space generated by column vectors of $A$, there would be no solution.
+*** Exercises
+**** *Exercise 1*
+See notes and refer to the definition of linear independence.
+**** *Exercise 2*
+\\
+Let $u$ be one set of solution and $w$ be another.\\
+We want to show that $u+w\in X$.
+$$\sum\limits_{i=1}^n (u_i+w_i)\cdot A^i=\sum\limits_{i=1}^n u_i\cdot A^i+\sum\limits_{i=1}^n w_i\cdot A^i=O+O=O$$
+Thus, $u+w\in X$.
+Also, we need to show $cu\in X$ where $c\in K$.
+$$c \sum\limits_{i=1}^n u_i \cdot A^i=cO=O$$
+Other *VS* s are easy to follow as we define the addition of vectors in $X$ componentwise, $O$ as a vector whose components are all zero, $1$ as a vector whose components are all one.
+**** *Exercise 3*
+We want to show following
+$$\begin{aligned}
+\sum\limits_{i=1}^n (a_i+b_i \text{i}) A^i&=O_{\mathbb{C}}\\
+\sum\limits_{i=1}^n a_iA^{i}+\sum\limits_{i=1}^n b_i \text{i} \cdot A^i &= O_{\mathbb{C}}\\
+O_{\mathbb{C}}+\sum\limits_{i=1}^n b_i \text{i} \cdot A^i&=O_{\mathbb{C}}\\
+\sum\limits_{i=1}^n b_i \cdot A^i&=O_{\mathbb{C}}
+\end{aligned}$$
+This means that $\{A^i\}$ should be linear independent over $\mathbb{R}$ ($\sum\limits_{i=1}^n b_i \cdot A^i=O_{\mathbb{C}}$ is equal to $\sum\limits_{i=1}^n b_i \cdot A^i=O_{\mathbb{R}}$ as there is no imaginary part). Since it is known to us that $\{A^i\}$ is linear independent over $\mathbb{R}$, it has been proved as we do it reversely.
+**** *Exercise 4*
+We know that
+$$\sum\limits_{i=1}^n (a_i+b_i \text{i}) A^i = O_{\mathbb{C}}$$
+which means that $\sum\limits_{i=1}^n a_i A^i = O_{\mathbb{C}}$ and/or $\sum\limits_{i=1}^n b_i A^i = O_{\mathbb{C}}$.
+For either cases, we have shown it is linear dependent over $\mathbb{R}$ ($a_i,b_i\in \mathbb{R}$).
+** $\S$ 3
+*** Exercises
+**** *Exercise 1*
+$AI=IA=A$
+**** *Exercise 2*
+$AO=O$
+**** *Exercise 3*
+\\
+For every $A$ and $B$, $(AB)C=A(BC)$.
+***** Case 1
+$$\begin{pmatrix}
+3&2\\
+4&1
+\end{pmatrix}$$
+***** Case 2
+$$\begin{pmatrix}
+10\\
+14
+\end{pmatrix}$$
+***** Case 3
+$$\begin{pmatrix}
+33&37\\
+11&-18
+\end{pmatrix}$$
+**** *Exercise 4*
+This one could be proved as it is proved [[(a+b)^2][here]].
+**** *Exercise 5*
+$$AB=\begin{pmatrix}
+4&2\\
+5&-1
+\end{pmatrix}$$
+$$BA=\begin{pmatrix}
+2&4\\
+4&1
+\end{pmatrix}$$
+**** *Exercise 6*
+$$CA=AC=\begin{pmatrix}
+7&14\\
+21&-7
+\end{pmatrix}$$
+$$CB=BC=\begin{pmatrix}
+14&0\\
+7&7
+\end{pmatrix}$$
+General rule is that for symmetric one, we may have $AB=BA$? (I am not sure here).
+**** *Exercise 7*
+$$XA=\begin{pmatrix}
+3&1&5
+\end{pmatrix}$$
+**** *Exercise 8*
+$$\begin{aligned}
+X_1 A=A_2\\
+X_2 A=A_3
+\end{aligned}$$
+Let $X_i$ be a unit vector with only $i$ -th component equal to $1$. $X_i A=A_i$
+**** *Exercise 9*
+\\
+Skip the steps involving verifications.
+$^t (AB)=^tB^tA$ has already been proved in $\S2$. Thus, $^t [(AB)C]=^t C\cdot ^t (AB)=^t C\cdot ^t B\cdot ^tA$.
+**** *Exercise 10*
+\\
+Firstly, we know $A$ is of $1\times n$, $M$ is of $n\times n$ and $B$ is of $1\times n$. This means that $\dim (\langle A,B\rangle)=1$. Also, it implies that $^t (\langle A,B\rangle)=\langle A,B\rangle$. Thus, we have
+$$\begin{aligned}
+\langle A,B\rangle&=^t (\langle A,B\rangle)\\
+&=^t(AM^tB)\\
+&=^t(^tB)\cdot ^tM\cdot ^tA && \text{Exercise 9}\\
+&=BM^tA\\
+&=\langle B,A\rangle
+\end{aligned}$$
+which is *SP 1*.
+Also, let
+$$N=^t(B+C)$$
+Then, $n_{ij}=n^{\prime}_{ji}=b_{ji}+c_{ji}$. This implies also $N=^tA+^tB$. Therefore,
+$$\langle A,B+C\rangle=AM^t(B+C)=AM(^tB+^tC)=\langle A,B\rangle+\langle A,C\rangle$$
+which is *SP 2*. Finally
+$$\langle cA,B\rangle=cAM^tB=c\langle A,B\rangle$$
+which is *SP 3*.
+**** *Exercise 11*
+\\
+For part *(a)*, see *Exercise 35*.\\
+Part *(b)*
+$$A^2=\begin{pmatrix}
+1&2&3\\
+0&1&2\\
+0&0&1
+\end{pmatrix}$$
+$$A^3=\begin{pmatrix}
+1&3&6\\
+0&1&3\\
+0&0&1
+\end{pmatrix}$$
+$$A^4=\begin{pmatrix}
+1&4&10\\
+0&1&4\\
+0&0&1
+\end{pmatrix}$$
+**** *Exercise 12*
+$$(AX)_{a}=\begin{pmatrix}
+4\\
+7\\
+5
+\end{pmatrix}
+(AX)_{b}=\begin{pmatrix}
+3\\
+1
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+x_2\\
+0
+\end{pmatrix}
+(AX)_d=\begin{pmatrix}
+0\\
+x_1
+\end{pmatrix}$$
+**** *Exercise 13*
+$$(AX)_a=\begin{pmatrix}
+2\\
+4
+\end{pmatrix}$$
+$$(AX)_b=\begin{pmatrix}
+4\\
+6
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+3\\
+5
+\end{pmatrix}$$
+**** *Exercise 14*
+$$(AX)_a=\begin{pmatrix}
+3\\
+1\\
+2
+\end{pmatrix}$$
+$$(AX)_b=\begin{pmatrix}
+12\\
+3\\
+9
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+5\\
+4\\
+8
+\end{pmatrix}$$
+**** *Exercise 15*
+$AX=A^2$ (second column of $A$).
+**** *Exercise 16*
+$AX=A^i$
+**** *Exercise 17*
+\\
+Let $U_i$ be a unit column vector which only has $1$ on its $i$ -th component. The proposed form of $C^k$ could be written in the following way.
+$$\begin{aligned}
+C^k&=\sum\limits_{i=1}^n b_{ik}A^i\\
+&=\sum\limits_{i=1}^n b_{ik}[\sum\limits_{j=1}^m (a_{ji}\cdot U_j)]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^m a_{ji}b_{ik}\cdot U_j]\\
+\end{aligned}$$
+$$\begin{aligned}
+C^k&=\sum\limits_{j=1}^m A_j\cdot B^k\cdot U_j\\
+&=\sum\limits_{j=1}^m [\sum\limits_{i=1}^n a_{ji}b_{ik}\cdot U_j]
+\end{aligned}$$
+Two forms are essentially the same if you expand them and compare. Thus, we have proved that the proposed formula is an equivalence of the original definition.
+**** *Exercise 18*
+***** $A^{-1}=(I+A)\Rightarrow A\cdot A^{-1}=I^2-A^2=I$
+***** $A^{-1}=(I^2+IA+A^2)\Rightarrow A\cdot A^{-1}=I^3-A^3=I$
+***** For real number $I$ and $A$, we see that $I^n-A^n$ can be factored into $I-A$ and another polynomial, because according to remainder theorem, plugging in $I=A$ results in $I^n-A^n=0$. Thus, we could follow the same pattern to construct always a $A^{-1}$.
+***** Set $A^{-1}=(-A-2I)$
+***** Set $A^{-1}=(-A^2-A)$
+**** *Exercise 19*
+$$AB=\begin{pmatrix}
+1 & ab\\
+0 & 1
+\end{pmatrix}$$
+$$A^2=\begin{pmatrix}
+1 & 2a\\
+0 & 1
+\end{pmatrix}$$
+Inductive step:
+$$\begin{aligned}
+A^{n+1}&=A^n\cdot A\\
+&=\begin{pmatrix}
+1 & na\\
+0 & 1
+\end{pmatrix}\cdot A\\
+&=\begin{pmatrix}
+1 & (n+1)a\\
+0 & 1
+\end{pmatrix}
+\end{aligned}$$
+Thus, we have proved it.
+**** *Exercise 20*
+$$A^{-1}=\begin{pmatrix}
+1 & -a \\
+0 & 1
+\end{pmatrix}$$
+**** *Exercise 21*
+We now show that $B^{-1}A^{-1}$ would be an inverse of $AB$.
+$$(AB)(B^{-1}A^{-1})=A(B\cdot B^{-1})A^{-1}=A\cdot A^{-1}=I$$
+And for the reverse, it is easy to verify either.
+**** *Exercise 22*
+See the solution manual
+**** *Exercise 23*
+$$\begin{aligned}
+A^2&=A\cdot A\\
+&=\begin{pmatrix}
+\cos 2\theta & -\sin 2\theta\\
+\sin 2\theta & \cos 2\theta
+\end{pmatrix}
+\end{aligned}$$
+Inductive step:
+$$\begin{aligned}
+A^{n+1}&=\begin{pmatrix}
+\cos n\theta & -\sin n\theta\\
+\sin n\theta & \cos n\theta
+\end{pmatrix}\cdot A\\
+&=\begin{pmatrix}
+\cos n\theta \cos \theta - \sin n\theta \sin \theta & -(\sin n\theta \cos \theta + \sin \theta \cos n\theta) \\
+\sin n\theta \cos \theta + \sin \theta \cos n\theta & - \sin n\theta + \cos n\theta \cos \theta
+\end{pmatrix}\\
+&=\begin{pmatrix}
+\cos (n+1)\theta & -\sin (n+1)\theta\\
+\sin (n+1)\theta & \cos (n+1)\theta
+\end{pmatrix}
+\end{aligned}$$
+Thus, we have determined $A^n$
+**** *Exercise 24*
+$$A=\begin{pmatrix}
+0 & 1\\
+-1 & 0
+\end{pmatrix}$$
+**** *Exercise 25*
+***** $\text{tr}(A)=2$
+***** $\text{tr}(A)=4$
+***** $\text{tr}(A)=8$
+**** *Exercise 26*
+See *Exercise 27*.
+**** *Exercise 27*
+$$\begin{aligned}
+\text{tr}(AB)&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n a_{ij} b_{ji}]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n b_{ji} a_{ij}]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n b_{ij} a_{ji}] && \text{They are the same if you expand}\\
+&=\text{tr}(BA)
+\end{aligned}$$
+**** *Exercise 28*
+As diagonal line keeps same after transpose, trace of the matrix would not change as well.
+**** *Exercise 29*
+$A^n=((a_{ij})^n)$
+**** *Exercise 30*
+$$A^2=\begin{pmatrix}
+a_1^2 & 0 & \cdots & 0\\
+0 & a_2^2 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^2
+\end{pmatrix}$$
+Inductive step
+$$A^{k+1}=\begin{pmatrix}
+a_1^k & 0 & \cdots & 0\\
+0 & a_2^k & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^k
+\end{pmatrix}\cdot A=\begin{pmatrix}
+a_1^{k+1} & 0 & \cdots & 0\\
+0 & a_2^{k+1} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^{k+1}
+\end{pmatrix}$$
+$\blacksquare$
+**** *Exercise 31*
+See *Exercise 35*
+**** *Exercise 32*
+We want to show
+$$\begin{aligned}
+^t(A^{-1})&=(^t A)^{-1}\\
+^t(A^{-1})\cdot ^t (A)&=(^t A)^{-1} \cdot (^tA)\\
+^t(A^{-1})\cdot ^t (A)&=I_n\\
+\end{aligned}$$
+Let $C=^t(A^{-1})\cdot ^t (A)$. We then know
+$$\begin{aligned}
+c_{ij}&=\sum\limits_{k=1}^n a^{\prime -1}_{ik} a^{\prime}_{kj}\\
+&=\sum\limits_{k=1}^n a_{jk} a^{-1}_{ki}\\
+&=A_j\cdot A^{-1\ i}
+\end{aligned}$$
+Thus,
+$$\begin{aligned}
+C&=^t(A\cdot A^{-1})\\
+&=^t(I_n)=I_n
+\end{aligned}$$
+If we do it in the reverse way, then we can prove it.
+**** *Exercise 33*
+Let $B=^t (\bar{A})$, then $b_{ij}=\bar{a}_{ji}$. Let $C=\overline{^t A}$, then $c_{ij}=\bar{a^{\prime}}_{ij}=\bar{a}_{ji}$. Thus, $B=C$.
+**** *Exercise 34*
+Its inverse is
+$$\begin{pmatrix}
+\frac{1}{a_1} & 0 & \cdots & 0\\
+0 & \frac{1}{a_2} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \frac{1}{a_n}
+\end{pmatrix}$$
+**** *Exercise 35*
+See solution manual. Here I would not like to introduce complex formal reasoning to simulate computation result.
+**** *Exercise 36*
+\\
+By result of *Exercise 35* we see that $N^{n+1}=O$ as $N=A-I_n$ is of the form being described in *Exercise 35*.\\
+For inverse part, see *Exercise 18*.
+**** *Exercise 37*
+$$(I-N)(I+N+\cdot +N^r)=I^{r+1}-N^{r+1}=I^{r+1}=I$$
+**** *Exercise 38*
+See solution manual for detail computation.
+**** *Exercise 39*
+Since we know $AB=BA$ or $A,B$ fulfills *SP 1*, we may say
+$$(AB)^r=A^rB^r=O$$
+For $(A+B)$, *I don't know how to prove by now because I don't know binomial formula well*.

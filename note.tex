@@ -1,4 +1,4 @@
-% Created 2020-05-18 Mon 21:29
+% Created 2020-05-21 Thu 21:24
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -31,15 +31,15 @@
 \maketitle
 \tableofcontents \clearpage
 \section{Chapter 1}
-\label{sec:orgf1e48e3}
+\label{sec:org9fe3c8b}
 \subsection{\(\S\) 1}
-\label{sec:orga8c254e}
+\label{sec:org5c40889}
 \subsubsection{Notes}
-\label{sec:org36915c6}
+\label{sec:org9e65092}
 A generic vector space \(V\) is not a field because there is no definition of \(v^{-1}\) for some \(v\in V\), fulfilling not the definition of a field.\\
 \begin{enumerate}
 \item \textbf{Pg. 4 Proof of \((-1)v=v\)}
-\label{sec:org1287ffe}
+\label{sec:orgf39726b}
 $$\begin{aligned}
 (-1)v+v&=(-1)v+1\cdot v\\
 &=(-1+1)v\\
@@ -47,7 +47,7 @@ $$\begin{aligned}
 \end{aligned}$$
 Thus, \((-1)v=-v\).
 \item \textbf{Pg. 6 Proof of SP 3}
-\label{sec:org339b244}
+\label{sec:org88116c3}
 $$\begin{aligned}
 (xA)\cdot B&=\sum\limits_{i=1}^{n}(xa_i) b_{i}\\
 &=\sum\limits_{i=1}^{n}x(a_i b_{i})\\
@@ -59,8 +59,9 @@ A\cdot (xB)&=\sum\limits_{i=1}^{n}a_i (xb_{i})\\
 &=x(A\cdot B)
 \end{aligned}$$
 \item \textbf{\textbf{Pg. 7}}
-\label{sec:org0a67369}
+\label{sec:org68a6491}
 
+\label{org2b69dae}
 Upper one:
 $$\begin{aligned}
 (A+B)^2&=(A+B)\cdot (A+B)\\
@@ -70,9 +71,9 @@ $$\begin{aligned}
 Bottom one:
 Since \(K\) is a field, all \textbf{VS} s regarding summation or product of functions are actually closed on \(K\). By applying field axioms, \(V\) is then a vector space over \(K\).
 \item \textbf{\textbf{Pg. 9}}
-\label{sec:org0254427}
+\label{sec:org2add66d}
 
-\label{orgbb25052}
+\label{org8b2c027}
 Let \(a_1=(u_1+w_1),a_2=(u_2+w_2)\). Both of them \(\in (U+W)\).\\
 Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \(u_1,w_1,u_2,w_2\in V\), moreover, \((U+W)\subset V\).\\
 \(a_1+a_2=(u_1+u_2)+(w_1+w_2)\in (U+W)\) \\
@@ -80,13 +81,13 @@ Since \(U,W\) are subspaces of \(V\), \(U,W\in V\). Thus, \(a_1,a_2 \in V\) as \
 Since \(O\in U\) and \(O\in W\), \(O=O+O\in (U+W)\). Thus, \((U+W)\) is a subspace of \(V\).
 \end{enumerate}
 \subsubsection{Exercises}
-\label{sec:org76f1b02}
+\label{sec:orgfcf2e93}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:orgaddf7bf}
+\label{sec:org7791da3}
 Let \(v\in{} V\), \(c[v+(-v)]=cv+c(-v)=cv+(-c)v=v\cdot{}0=v\cdot{}(1-1)=v+(-v)=O\)
 \item \textbf{Exercise 2}
-\label{sec:orgbac9e9c}
+\label{sec:org66a1156}
 Since \(c\not = 0\)
 $$\begin{aligned}
 O&=cv+[-(cv)]\\
@@ -100,19 +101,19 @@ v-v&=v\\
 O&=v
 \end{aligned}$$
 \item \textbf{Exercise 3}
-\label{sec:orgc3c226e}
+\label{sec:org0fee335}
 
 \(\forall g\in V, (g+f)(x) = g(x)+f(x) = f(x)+g(x) = (f+g)(x) \Rightarrow g+f = f+g\).\\
 If \(O+u = u\), \((O+u)(x) = O(x)+u(x)= u(x)\). Therefore, \(O(x)=0\).
 \item \textbf{Exercise 4}
-\label{sec:orge0a3486}
+\label{sec:org5bd5d1b}
 $$\begin{aligned}
 v+w&=O\\
 v+w&=v+(-v)\\
 w&=-v
 \end{aligned}$$
 \item \textbf{Exercise 5}
-\label{sec:orgfe3fb0c}
+\label{sec:org46efa02}
 $$\begin{aligned}
 v+w&=v\\
 v+(-v)+w&=v+(-v)\\
@@ -120,7 +121,7 @@ O+w&=O
 \end{aligned}$$
 Since \(\forall u, O+u=u\), we have \(w=O\).
 \item \textbf{Exercise 6}
-\label{sec:org4806b4c}
+\label{sec:org75b07f4}
 
 Let \(W=\{B| B\cdot A_{1}=O\ \text{and}\ B\cdot A_2=O\}\). Specifically, it is clear that \(O\in W\) as \(O\cdot A = \sum\limits_{i=1}^{n} b_i a_i=\sum\limits_{i=1}^{n} 0\times a_i=0\).\\
 Let \(v_1,v_2 \in W\) such that \(v_1\cdot A_1=0\), \(v_1\cdot A_2=0\), \(v_2\cdot A_1=0\), \(v_2\cdot A_2=0\). Thus,
@@ -136,41 +137,41 @@ $$\begin{aligned}
 \end{aligned}$$.
 It is easy to show for \(A_2\) then. Therefore, \((v_1+v_2)\in W\).
 \item \textbf{Exercise 7}
-\label{sec:org9f57126}
+\label{sec:orgd04c40e}
 Same to apply as Exercise 6.
 \item \textbf{Exercise 8}
-\label{sec:org1f40266}
+\label{sec:org1247ad7}
 
 Name the set as \(W\).
 \begin{enumerate}
 \item Proof
-\label{sec:org40fb962}
+\label{sec:org1062b0e}
 
 \(v_1+v_2=(x_1+x_2,y_1+y_2), x_1+x_2=y_1+y_2 \Rightarrow (v_1+v_2)\in W\) \\
 \(cv=(cx,cy), cx=cy \Rightarrow cv\in W\) \\
 \(O=(0,0)\in W\)
 \item Proof
-\label{sec:org5b749db}
+\label{sec:orgabafde7}
 See Part (a).
 \item Proof
-\label{sec:org4906489}
+\label{sec:org820f2e8}
 Same technique as in Part (a).
 \end{enumerate}
 \item \textbf{Exercise 9}
-\label{sec:org2a84b65}
+\label{sec:orgd80a98c}
 See Exercise 8.
 \item \textbf{Exercise 10}
-\label{sec:orgb29c534}
+\label{sec:org8d11612}
 
 For \(U\cap W\), let \(v_1,v_2\in U\cap W\). Since \(v_1, v_2\in U\) and \(U\) is a subspace, \(v_1+v_2\in U\). In same way, we can see that \(v_{1}+v_2\in W\). Thus, \(v_1+v_2\in U\cap W\).\\
 Since \(v_1\in U\), \(cv_1\in U\). Also, it shows \(cv_1\in W\) in the same way. Thus, \(cv_{1}\in U\cap W\).
 Because \(U, W\) are subspaces, \(O\in U\) and \(O\in W\). Thus, \(O\in U\cap W\). Therefore, \(U\cap W\) is a subspace.\\
-Refer to the \hyperref[orgbb25052]{note part} for proof for \(U+W\).
+Refer to the \hyperref[org8b2c027]{note part} for proof for \(U+W\).
 \item \textbf{Exercise 11}
-\label{sec:org03a2e49}
+\label{sec:org3a674f1}
 Since \(L\) is a field, \textbf{VS1, VS3, VS4, VS8} are established under field axioms, and multiplication and addition are closed in \(L\). For \textbf{VS5, VS6, VS7}, they are all valid as \(K\subset L\). \(O\) is simply \(0\), and \(1\cdot u=u\) is  established in \(L\).
 \item \textbf{Exercise 12}
-\label{sec:org32c6190}
+\label{sec:org83aec63}
 
 For \(x,y\in K\), we have\\
 \(x+y=a_1+b_1\sqrt{2}+a_2+b_2\sqrt{2}=(a_1+a_2)+(b_1+b_2)\sqrt{2}\). Since \(a_1,b_1,a_2,b_2\in \mathbb{Q}\), \((a_1+a_2),(b_1+b_2)\in\mathbb{Q}\). Thus, \(x+y\in K\).\\
@@ -180,17 +181,17 @@ If \(a+b\sqrt{2}\not = 0\), \(a,b\not = 0\), and \(a-b\sqrt{2}\not = 0\). Thus, 
 Specifically, if \(a=b=0\), \(0\in\mathbb{Q}\). If \(a=1,b=0\), \(1\in\mathbb{Q}\).\\
 Thus, \(K\) is a field.
 \item \textbf{Exercise 13}
-\label{sec:org519a5b5}
+\label{sec:orgebd4f2d}
 Same technique as Exercise 12.
 \item \textbf{Exercise 14}
-\label{sec:orgbea924e}
+\label{sec:org7a2d8fc}
 Same technique as Exercise 12.
 \end{enumerate}
 \subsection{\(\S\) 2}
-\label{sec:org2a259d6}
+\label{sec:orgf74bd7c}
 \subsubsection{Notes}
-\label{sec:orgcde85bf}
-\label{org8baa3fd}
+\label{sec:orgf5c447b}
+\label{orgd9103bd}
 Another quite helpful equivalent of definition of linear independence is that (stated following without loss of generality)
 $$\forall a_1\not = 0,a_1 v_1\not =\sum\limits_{i=2}^n a_i$$
 Here is the \emph{proof} of equivalence between above statement and definition of linear independence.\\
@@ -204,36 +205,36 @@ O&\not = (-\lambda)v_1 + \sum\limits_{i=2}^n \frac{\lambda a_i}{a_1}v_i && \lamb
 \(\lambda\) and \(a_i\) could be arbitrary, thus from above we could conclude that \(a'_1 v_1\not =\sum\limits_{i=2}^n a'_i\) if and only if all \(a'=0\), which is the definition of linear independence.\\
 Also, another point that worth paying attention to is that generators could be \textbf{linear dependent}. This is true because you could put arbitrary vectors at the end of a basis of a vector space and just set coefficients for these extraneous vectors when it is producing new linear combinations.
 \subsubsection{Exercises}
-\label{sec:org9e17189}
+\label{sec:orgc4e86d1}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:orgb2b5a8b}
-Using result from \hyperref[org023232a]{\textbf{Exercise 4}}, easy to prove.
+\label{sec:orgf820860}
+Using result from \hyperref[org75fd3e1]{\textbf{Exercise 4}}, easy to prove.
 \item \textbf{Exercise 2}
-\label{sec:org2dbf827}
+\label{sec:org2c713f0}
 \begin{enumerate}
 \item \((1,-1)\)
-\label{sec:orgf46329e}
+\label{sec:org54beb99}
 \item \((\frac{1}{2},\frac{3}{2})\)
-\label{sec:org4735997}
+\label{sec:org60afacd}
 \item \((1,1)\)
-\label{sec:org16b0ee6}
+\label{sec:org71984a1}
 \item \((3,2)\)
-\label{sec:org95585cb}
+\label{sec:org1d09b64}
 \end{enumerate}
 \item \textbf{Exercise 3}
-\label{sec:org6fea0a5}
+\label{sec:org21bc3ea}
 \begin{enumerate}
 \item \((\frac{1}{3},-\frac{1}{3},\frac{1}{3})\)
-\label{sec:org565f82f}
+\label{sec:org464954f}
 \item \((1,0,1)\)
-\label{sec:org9205270}
+\label{sec:org4d314ee}
 \item \((\frac{1}{3},-\frac{1}{3},-\frac{2}{3})\)
-\label{sec:org43caa30}
+\label{sec:orgb6daa8e}
 \end{enumerate}
 \item \textbf{Exercise 4}
-\label{sec:orgb09f960}
-\label{org023232a}
+\label{sec:org2a5f889}
+\label{org75fd3e1}
 
 Following set of equations is an equivalent of \(x(a,b)+y(c,d)=O\),
 $$\begin{aligned}
@@ -250,24 +251,24 @@ First, suppose \(a,b,c,d\not = 0\). Since \(ad-cb=0\), \(x\in \mathbb{R}\). By a
 If \(a,b,c,d\not = 0\) does \textbf{NOT} hold. Without lose of generality (for all the possibilities, \(a,d\) and \(c.b\) are interchangeable), consider following scenarios in a \(xy\) -plane,
 \begin{enumerate}
 \item \(a=0,c=0\)
-\label{sec:org81a8147}
+\label{sec:org1e5aeb5}
 
 If \(a=c=0\), \(x,y\in \mathbb{R}\) in \((1)\). Because the \((2)\) is a line in the plane, there must exist some \(x,y\not = 0\).
 \item \(a=0,b=0,c=0\)
-\label{sec:org2abe186}
+\label{sec:org4d6f8f6}
 
 Same argument as above, despite the line represented by \((2)\) is a little bit peculiar (it is \(y=0\)).
 \item \(a=0,d=0,c=0\)
-\label{sec:orga15d629}
+\label{sec:org5f7d70e}
 
 Same argument as the first, despite the line represented by \((2)\) is a little bit peculiar (it is \(x=0\)).
 \item \(a=0,d=0,b=0,c=0\)
-\label{sec:org81c2545}
+\label{sec:orgd173ddc}
 
 Both \((1), (2)\) represent the whole plane, thus, \(x,y\in \mathbb{R}\).
 \end{enumerate}
 \item \textbf{Exercise 5,6}
-\label{sec:orgdc6604f}
+\label{sec:orgd63b6a7}
 
 To correctly understand how could functions be elements(vectors) in vector space, we need to understand that function \(f:S\rightarrow K\) is essentially a set of pairs \((s,k),\forall s\in S\). Functions have scalar multiplication and addition defined.\\
 \(f+g\) is defined as \(\{(s,f(s)+g(s))|s\in S\}\), and \(cf, c\in K\) is defined as \(\{(s,c\cdot f(s))|s\in S\}\).\\
@@ -278,23 +279,23 @@ For example, we need to show that \(f(s)=1\) and \(g(s)=t\) are linear independe
 $$af+bg=O$$
 which is an equivalent of
 $$\forall t,a+bt=0$$
-Above conversion is quite helpful since we could put in arbitrary \(t\) and the equation should holds. Thus, we could put in particular values of \(t\) to \textbf{construct} set of equations to show that \(a=b=0\). For example, here we plug in \(t=0\), then \(a=0\), and if we plug back \(a=0\) into original equation with \(t=0\) again, \(b=0\).\\
+Above conversion is quite helpful since we could put in arbitrary \(t\) and the equation should hold. Thus, we could put in particular values of \(t\) to \textbf{construct} set of equations to show that \(a=b=0\). For example, here we plug in \(t=0\), then \(a=0\), and if we plug back \(a=0\) into original equation with \(t=0\) again, \(b=0\).\\
 This method could be used throughout \textbf{Exercise 5,6}.
 \item \textbf{Exercise 7}
-\label{sec:org435645d}
+\label{sec:org861a28e}
 \((3,5)\)
 \item \textbf{Exercise 8}
-\label{sec:org256a5a6}
+\label{sec:org732df7f}
 \emph{\textbf{Calculus involved, not doing now.}}
 \item \textbf{Exercise 9}
-\label{sec:org7c1a060}
+\label{sec:org30d5ba4}
 $$\begin{aligned}
 \sum\limits_{i=1}^{r} [a_i\cdot (A_i\cdot \sum\limits_{j=i+1}^{r}A_{j})]&=O && \text{All vectors are mutually perpendicular}\\
 &=\sum\limits_{i=1}^{r} [(a_i\cdot A_i)\cdot \sum\limits_{j=i+1}^{r}A_{j}]\\
 \end{aligned}$$
 Since \(\forall A\in \{A_i\}, A\not = O\), it is only possible that every \(a\) is \(0\). Thus, \({A_i}\) are linearly independent.
 \item \textbf{Exercise 10}
-\label{sec:org5d2cbf8}
+\label{sec:org1504d1e}
 
 Since \(v,w\) are linear dependent, for
 $$nv+mw=O$$
@@ -302,18 +303,18 @@ at least one of \(n,m\not =0\).
 Consider following scenarios, we can see that there would be \(a=0\) or \(a=-\frac{n}{m}\).
 \begin{enumerate}
 \item \(n=0,m\not =0 \Rightarrow w=O\)
-\label{sec:orge3ab517}
+\label{sec:org3781be5}
 \item \(n\not =0,m =0 \Rightarrow v=O\).
-\label{sec:org6b086f0}
+\label{sec:org4e63fe3}
 This contradicts with \(v\not =O\) in problem. Thus, this is impossible.
 \item \(n\not = 0, m\not =0 \Rightarrow w=\frac{-n}{m}v\)
-\label{sec:org93c76c2}
+\label{sec:org24d7b2f}
 \end{enumerate}
 \end{enumerate}
 \subsection{\(\S\) 3}
-\label{sec:org7833fc5}
+\label{sec:orga862215}
 \subsubsection{Notes}
-\label{sec:orgf969dde}
+\label{sec:org486ea64}
 This subsection comprises a lot of concise proofs. But in conclusion, we need to know that
 $$\begin{aligned}
 \text{Basis}&\Leftrightarrow \text{Maximal linear independent vector set} && \text{proof at }\bold{Theorem 3.1}\\
@@ -322,9 +323,9 @@ $$\begin{aligned}
 \end{aligned}$$
 Thus, all possible bases of a vector space \(V\) are of one and only one possible number of elements, which is equal to the one of maximal independent vector set.
 \subsection{\(\S\) 4}
-\label{sec:org00c714d}
+\label{sec:orge911152}
 \subsubsection{Notes}
-\label{sec:orgcd748b6}
+\label{sec:org5714235}
 \emph{Proof} for $$\dim (U\times W)=\dim U+\dim W$$
 Because \(\forall u\in (U\times W) ,(O_u+O_w)+u=u+(O_u+O_w)=u\). Thus, by definition, \(O=(O_u,O_w)\).\\
 Let \(A=\{u_i\}\) be a basis of \(U\) and \(B=\{w_i\}\) be a basis of \(W\). Note the dimension of \(U,W\) as \(n,m\) respectively. Let $$C=\{(u_i,0)|u_i\in A\}\cup\{(0,w_i)|w_i\in B\}$$
@@ -348,27 +349,566 @@ and
 $$\{(u_i,0)|u_i\in A\}\cup\{(0,w_i)|w_i\in B\}$$
 is a basis for \(U\times W\).\\
 \subsubsection{Exercises}
-\label{sec:org94305b3}
+\label{sec:orgfb18502}
 \begin{enumerate}
 \item \textbf{Exercise 1}
-\label{sec:org166958c}
+\label{sec:org8948ea9}
 
 For the first part, we need to show that \(\forall v\in V, \exists \text{ unique } u\in U, w\in W: v=u+w\). Since \((2,1)\) and \((0,1)\) are linear independent, they are a basis of \(V=\mathbb{R}^2\). This means
 $$\forall v\in V, \exists \text{ unique } a,b\in K: v=a\cdot (2,1)+b\cdot (0,1)$$
 Thus, just set \(u=a\cdot (2,1)\) and \(w=b\cdot (0,1)\), and we have proved it.\\
 It is same for \((2,1)\) and \((1,1)\).
 \item \textbf{Exercise 2}
-\label{sec:orgc7011ad}
+\label{sec:orge368077}
 
 Since \((1,0,0), (1,1,0), (0,1,1)\) are linear independent, we obtain that
 $$\forall v\in V, \exists \text{ unique } a,b,c\in K: v=a\cdot (1,0,0)+b\cdot (1,1,0)+ c\cdot (0,1,1)$$
 Set \(u=a\cdot (1,0,0)\) and \(w=b\cdot (1,1,0)+ c\cdot (0,1,1)\), it would be proved.
 \item \textbf{Exercise 3}
-\label{sec:orgce4b716}
-According to argument provided \hyperref[org8baa3fd]{here}, \(\forall c\in K,cA\not =B\) means that \(A,B\) are linear independent. Also, according to \textbf{Theorem 3.4}, they are a basis of \(\mathbb{R}^2\).\\
+\label{sec:org857cd8e}
+According to argument provided \hyperref[orgd9103bd]{here}, \(\forall c\in K,cA\not =B\) means that \(A,B\) are linear independent. Also, according to \textbf{Theorem 3.4}, they are a basis of \(\mathbb{R}^2\).\\
 Based on the similar argument in \textbf{Exercise 1}, second part could be proved.
 \item \textbf{Exercise 4}
-\label{sec:org6de2949}
+\label{sec:orgc5d72d8}
 See notes
+\end{enumerate}
+\section{Chapter 2}
+\label{sec:orge6a76f7}
+\subsection{\(\S\) 1}
+\label{sec:org47844e3}
+\subsubsection{Exercises}
+\label{sec:orgbdef049}
+\begin{enumerate}
+\item \textbf{Exercise 1}
+\label{sec:org24fe775}
+Skip
+\item \textbf{Exercise 2}
+\label{sec:org2a4d81e}
+Skip
+\item \textbf{Exercise 3}
+\label{sec:org4764d02}
+Skip
+\item \textbf{Exercise 4}
+\label{sec:org7601b9b}
+Skip
+\item \textbf{Exercise 5}
+\label{sec:orgca048b3}
+Let \(C=^t(A+B)=(c_{ij})\). Then, \(c_{ij}=(a_{ij}+b_{ij})'=a_{ji}+b_{ji}\). Thus, \(C=^tA+^tB\).
+\item \textbf{Exercise 6}
+\label{sec:org5f21747}
+Let \(B=^t(cA)\). Then, \(b_{ij}=ca_{ji}\). Since \(^tA=(a^{\prime}_{ij})=(a_{ji})=A\), \(B=c^tA\).
+\item \textbf{Exercise 7}
+\label{sec:org06cc252}
+No difference.
+\item \textbf{Exercise 8}
+\label{sec:org70e84a7}
+Skip
+\item \textbf{Exercise 9}
+\label{sec:org511aa31}
+Skip
+\item \textbf{Exercise 10}
+\label{sec:org2342b22}
+Let \(B=A+^tA=(b_{ij})=(a_{ij}+a_{ji})\). Since, \(b_{ij}=a_{ij}+a_{ji}=a_{ji}+b_{ij}=b_{ji}\), \(B\) is symmetric.
+\item \textbf{Exercise 11}
+\label{sec:org290517b}
+Skip
+\item \textbf{Exercise 12}
+\label{sec:orged85d94}
+Skip
+\item \textbf{Exercise 13}
+\label{sec:orga2105a9}
+
+\textbf{For followings, we mean ones in \emph{Exercises on Dimension} section}.\\
+Followings are linear independent.
+$$U_1=\begin{pmatrix}
+   1 & 0 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_2=\begin{pmatrix}
+   0 & 1 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_3=\begin{pmatrix}
+   0 & 0 \\
+   1 & 0
+\end{pmatrix}$$
+$$U_4=\begin{pmatrix}
+   0 & 0 \\
+   0 & 1
+\end{pmatrix}$$
+Apply \(a\cdot U_1+b\cdot U_2+c\cdot U_3+d\cdot U_4=O\) to verify it.
+Because it generates the matrix vector space \(Mat_{2\times 2}K\) over K (For every \(v\in Mat_{2\times 2}K\), simply let \(a,b,c,d\) be \(v\)'s components) and \(\{U_i\}\) are linear independent, \(\{U_i\}\) is a basis of \(Mat_{2\times 2}K\).\\
+Because the number of elements in a basis is the dimension of the vector space, we see that the dimension of it is 4.
+\item \textbf{Exercise 14}
+\label{sec:orgd177fd4}
+Similar argument to \textbf{Exercise 13}. Dimension of it is \(mn\).
+\item \textbf{Exercise 15}
+\label{sec:orga560b15}
+Dimension of it is \(n\). Simply build up a basis to see.
+\item \textbf{Exercise 16}
+\label{sec:orgb8bf39e}
+Similarly, dimension of it is \(\frac{(n+1)n}{2}\).
+\item \textbf{Exercise 17}
+\label{sec:orgb4db19e}
+
+Basis is a set comprises
+$$U_1=\begin{pmatrix}
+   1 & 0 \\
+   0 & 0
+\end{pmatrix}$$
+$$U_2=\begin{pmatrix}
+   0 & 1 \\
+   1 & 0
+\end{pmatrix}$$
+$$U_3=\begin{pmatrix}
+   0 & 0 \\
+   0 & 1
+\end{pmatrix}$$
+Then, it is easy to see that dimension is 3.
+\item \textbf{Exercise 18}
+\label{sec:org0661efa}
+Basis similar to the one in \textbf{Exercise 17} is linear independent and generates space. And, indeed, the number of elements in the basis is the same as one in \textbf{Exercise 16}. Thus, dimension of it is \(\frac{n(n+1)}{2}\).
+\item \textbf{Exercise 19}
+\label{sec:orgd800bbd}
+Same as \textbf{Exercise 15}.
+\item \textbf{Exercise 20}
+\label{sec:org9e28830}
+
+Let \(U\) be the subspace of \(V\). There would be a maximal number \(m\) of linear independent vectors (\textbf{Theorem 3.1} in chapter 1). Suppose the number \(m> \dim V\). Then it would contradicts \textbf{Theorem 3.1} in chapter 1 as any number of vectors more than \(\dim V\) would be linear dependent, which means the basis of \(U\) would be linear dependent (remember \(U\) is a subspace of \(V\)). Thus, \(m\leq \dim V\).\\
+Dimension could be \(0,1,2\).
+\item \textbf{Exercise 21}
+\label{sec:orge4a644b}
+
+According to the lemma we proved in \textbf{Exercise 20}, dimension of subspace of \(\mathbb{R}^{3}\) could be \(0,1,2,3\).
+\end{enumerate}
+\subsection{\(\S\) 2}
+\label{sec:org8f7eebb}
+\subsubsection{Notes}
+\label{sec:orgbd36c5d}
+\textbf{Lemma} Let \(A\) be a set of linear dependent vectors that generates \(V\). Then, for all \(v\in V\), there exists infinite linear combinations of \(A\) that form \(v\).\\
+\emph{Proof} Say that number of vectors in \(A\) is \(n\). Since \(A\) generates \(V\), \(\forall v\in V, \exists \{a_i\}: v=\sum\limits_{i=1}^n a_i A_i\). Let \(L\) be a set of linear combinations that form \(v\) (here \(L\) is a set of sets). We have
+$$\begin{aligned}
+v&=\sum\limits_{i=1}^n a_iA_i+O\\
+&=\sum\limits_{i=1}^n a_iA_i+\sum\limits_{i=1}^n b_iA_i\\
+&=\sum\limits_{i=1}^n (a_i+b_i) A_i
+\end{aligned}$$
+Since \(A\) is linear dependent, there exists \(\{b_i\}\) where not every element is \(0\). Therefore, \(\{a_i+b_i\}\in L\) and \(\{a_i+b_i\}\not = \{a_i\}\) for some \(\{b_i\}\).\\
+This means that \(\forall \ell \in L\), we can always form a new \(\ell^{\prime}\in L\). And since for all \(v\in V\) we always have one linear combination, we can do it infinitely, which means number of elements in \(L\) is infinite. Therefore, we have shown what was to be shown. \(\blacksquare\) \\
+Here we discuss the number of solutions for general linear equations. (\(A\) is a \(m\times n\) matrix. \(X\) is a \(n\times 1\) column matrix. \(B\) is a \(m\times 1\) column matrix).
+$$AX=B$$
+If \(n>m\), according to \textbf{Theorem 3.1 in chapter 1}, they must be linear dependent, resulting in infinite number of solutions because of \textbf{Lemma} above.\\
+If \(n=m\) and they are linear independent (it is then a basis because they are maximal independent vectors), there would only be one solution as \textbf{Theorem 2.1 in chapter 1} stated. If they are linear dependent and \(B\) is in the subspace generated by column vectors of \(A\), there would be infinite number of solutions (\textbf{Lemma}), else the equations are not solvable (there exists no linear combination to represent \(B\)).\\
+If \(n<m\) and they are independent and \(B\) is in the subspace generated by column vectors of \(A\), there would be only one solution. If they are linear independent but \(B\) is not in subspace, then it is unsolvable. If they are linear dependent and \(B\) is in subspace, infinite solutions occur. If they are linear dependent but \(B\) is not in subspace, equations are not solvable.\\
+In general,
+\begin{enumerate}
+\item If \(B\) is in the vector space generated by column vectors of \(A\) and they are linear independent, there exists one unique solution.
+\label{sec:orge522b91}
+\item If \(B\) is in the vector space generated by column vectors of \(A\) and they are linear dependent, there exists infinite solutions.
+\label{sec:org6c4a564}
+\item If \(B\) is not in the vector space generated by column vectors of \(A\), there would be no solution.
+\label{sec:org9ddb9b0}
+\end{enumerate}
+\subsubsection{Exercises}
+\label{sec:org5122164}
+\begin{enumerate}
+\item \textbf{Exercise 1}
+\label{sec:orgf918e67}
+See notes and refer to the definition of linear independence.
+\item \textbf{Exercise 2}
+\label{sec:orgfdcd74f}
+
+Let \(u\) be one set of solution and \(w\) be another.\\
+We want to show that \(u+w\in X\).
+$$\sum\limits_{i=1}^n (u_i+w_i)\cdot A^i=\sum\limits_{i=1}^n u_i\cdot A^i+\sum\limits_{i=1}^n w_i\cdot A^i=O+O=O$$
+Thus, \(u+w\in X\).
+Also, we need to show \(cu\in X\) where \(c\in K\).
+$$c \sum\limits_{i=1}^n u_i \cdot A^i=cO=O$$
+Other \textbf{VS} s are easy to follow as we define the addition of vectors in \(X\) componentwise, \(O\) as a vector whose components are all zero, \(1\) as a vector whose components are all one.
+\item \textbf{Exercise 3}
+\label{sec:orgf26f49a}
+We want to show following
+$$\begin{aligned}
+\sum\limits_{i=1}^n (a_i+b_i \text{i}) A^i&=O_{\mathbb{C}}\\
+\sum\limits_{i=1}^n a_iA^{i}+\sum\limits_{i=1}^n b_i \text{i} \cdot A^i &= O_{\mathbb{C}}\\
+O_{\mathbb{C}}+\sum\limits_{i=1}^n b_i \text{i} \cdot A^i&=O_{\mathbb{C}}\\
+\sum\limits_{i=1}^n b_i \cdot A^i&=O_{\mathbb{C}}
+\end{aligned}$$
+This means that \(\{A^i\}\) should be linear independent over \(\mathbb{R}\) (\(\sum\limits_{i=1}^n b_i \cdot A^i=O_{\mathbb{C}}\) is equal to \(\sum\limits_{i=1}^n b_i \cdot A^i=O_{\mathbb{R}}\) as there is no imaginary part). Since it is known to us that \(\{A^i\}\) is linear independent over \(\mathbb{R}\), it has been proved as we do it reversely.
+\item \textbf{Exercise 4}
+\label{sec:org4db2245}
+We know that
+$$\sum\limits_{i=1}^n (a_i+b_i \text{i}) A^i = O_{\mathbb{C}}$$
+which means that \(\sum\limits_{i=1}^n a_i A^i = O_{\mathbb{C}}\) and/or \(\sum\limits_{i=1}^n b_i A^i = O_{\mathbb{C}}\).
+For either cases, we have shown it is linear dependent over \(\mathbb{R}\) (\(a_i,b_i\in \mathbb{R}\)).
+\end{enumerate}
+\subsection{\(\S\) 3}
+\label{sec:org8317768}
+\subsubsection{Exercises}
+\label{sec:org3d432db}
+\begin{enumerate}
+\item \textbf{Exercise 1}
+\label{sec:org2bc8c54}
+\(AI=IA=A\)
+\item \textbf{Exercise 2}
+\label{sec:org30e5079}
+\(AO=O\)
+\item \textbf{Exercise 3}
+\label{sec:orgece43d5}
+
+For every \(A\) and \(B\), \((AB)C=A(BC)\).
+\begin{enumerate}
+\item Case 1
+\label{sec:orgdfb297d}
+$$\begin{pmatrix}
+3&2\\
+4&1
+\end{pmatrix}$$
+\item Case 2
+\label{sec:org09cda5f}
+$$\begin{pmatrix}
+10\\
+14
+\end{pmatrix}$$
+\item Case 3
+\label{sec:orgead6935}
+$$\begin{pmatrix}
+33&37\\
+11&-18
+\end{pmatrix}$$
+\end{enumerate}
+\item \textbf{Exercise 4}
+\label{sec:orgd2d56c4}
+This one could be proved as it is proved \hyperref[org2b69dae]{here}.
+\item \textbf{Exercise 5}
+\label{sec:orgf3fc535}
+$$AB=\begin{pmatrix}
+4&2\\
+5&-1
+\end{pmatrix}$$
+$$BA=\begin{pmatrix}
+2&4\\
+4&1
+\end{pmatrix}$$
+\item \textbf{Exercise 6}
+\label{sec:org5a14de1}
+$$CA=AC=\begin{pmatrix}
+7&14\\
+21&-7
+\end{pmatrix}$$
+$$CB=BC=\begin{pmatrix}
+14&0\\
+7&7
+\end{pmatrix}$$
+General rule is that for symmetric one, we may have \(AB=BA\)? (I am not sure here).
+\item \textbf{Exercise 7}
+\label{sec:orga142cb9}
+$$XA=\begin{pmatrix}
+3&1&5
+\end{pmatrix}$$
+\item \textbf{Exercise 8}
+\label{sec:org9cf883c}
+$$\begin{aligned}
+X_1 A=A_2\\
+X_2 A=A_3
+\end{aligned}$$
+Let \(X_i\) be a unit vector with only \(i\) -th component equal to \(1\). \(X_i A=A_i\)
+\item \textbf{Exercise 9}
+\label{sec:orgc9308b7}
+
+Skip the steps involving verifications.
+\(^t (AB)=^tB^tA\) has already been proved in \(\S2\). Thus, \(^t [(AB)C]=^t C\cdot ^t (AB)=^t C\cdot ^t B\cdot ^tA\).
+\item \textbf{Exercise 10}
+\label{sec:org57e8c34}
+
+Firstly, we know \(A\) is of \(1\times n\), \(M\) is of \(n\times n\) and \(B\) is of \(1\times n\). This means that \(\dim (\langle A,B\rangle)=1\). Also, it implies that \(^t (\langle A,B\rangle)=\langle A,B\rangle\). Thus, we have
+$$\begin{aligned}
+\langle A,B\rangle&=^t (\langle A,B\rangle)\\
+&=^t(AM^tB)\\
+&=^t(^tB)\cdot ^tM\cdot ^tA && \text{Exercise 9}\\
+&=BM^tA\\
+&=\langle B,A\rangle
+\end{aligned}$$
+which is \textbf{SP 1}.
+Also, let
+$$N=^t(B+C)$$
+Then, \(n_{ij}=n^{\prime}_{ji}=b_{ji}+c_{ji}\). This implies also \(N=^tA+^tB\). Therefore,
+$$\langle A,B+C\rangle=AM^t(B+C)=AM(^tB+^tC)=\langle A,B\rangle+\langle A,C\rangle$$
+which is \textbf{SP 2}. Finally
+$$\langle cA,B\rangle=cAM^tB=c\langle A,B\rangle$$
+which is \textbf{SP 3}.
+\item \textbf{Exercise 11}
+\label{sec:org38e1282}
+
+For part \textbf{(a)}, see \textbf{Exercise 35}.\\
+Part \textbf{(b)}
+$$A^2=\begin{pmatrix}
+1&2&3\\
+0&1&2\\
+0&0&1
+\end{pmatrix}$$
+$$A^3=\begin{pmatrix}
+1&3&6\\
+0&1&3\\
+0&0&1
+\end{pmatrix}$$
+$$A^4=\begin{pmatrix}
+1&4&10\\
+0&1&4\\
+0&0&1
+\end{pmatrix}$$
+\item \textbf{Exercise 12}
+\label{sec:org19c37a1}
+$$(AX)_{a}=\begin{pmatrix}
+4\\
+7\\
+5
+\end{pmatrix}
+(AX)_{b}=\begin{pmatrix}
+3\\
+1
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+x_2\\
+0
+\end{pmatrix}
+(AX)_d=\begin{pmatrix}
+0\\
+x_1
+\end{pmatrix}$$
+\item \textbf{Exercise 13}
+\label{sec:orgb24e07c}
+$$(AX)_a=\begin{pmatrix}
+2\\
+4
+\end{pmatrix}$$
+$$(AX)_b=\begin{pmatrix}
+4\\
+6
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+3\\
+5
+\end{pmatrix}$$
+\item \textbf{Exercise 14}
+\label{sec:org834ce79}
+$$(AX)_a=\begin{pmatrix}
+3\\
+1\\
+2
+\end{pmatrix}$$
+$$(AX)_b=\begin{pmatrix}
+12\\
+3\\
+9
+\end{pmatrix}$$
+$$(AX)_c=\begin{pmatrix}
+5\\
+4\\
+8
+\end{pmatrix}$$
+\item \textbf{Exercise 15}
+\label{sec:orgc15574a}
+\(AX=A^2\) (second column of \(A\)).
+\item \textbf{Exercise 16}
+\label{sec:org37fa587}
+\(AX=A^i\)
+\item \textbf{Exercise 17}
+\label{sec:orge6c44d7}
+
+Let \(U_i\) be a unit column vector which only has \(1\) on its \(i\) -th component. The proposed form of \(C^k\) could be written in the following way.
+$$\begin{aligned}
+C^k&=\sum\limits_{i=1}^n b_{ik}A^i\\
+&=\sum\limits_{i=1}^n b_{ik}[\sum\limits_{j=1}^m (a_{ji}\cdot U_j)]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^m a_{ji}b_{ik}\cdot U_j]\\
+\end{aligned}$$
+$$\begin{aligned}
+C^k&=\sum\limits_{j=1}^m A_j\cdot B^k\cdot U_j\\
+&=\sum\limits_{j=1}^m [\sum\limits_{i=1}^n a_{ji}b_{ik}\cdot U_j]
+\end{aligned}$$
+Two forms are essentially the same if you expand them and compare. Thus, we have proved that the proposed formula is an equivalence of the original definition.
+\item \textbf{Exercise 18}
+\label{sec:org57d8f93}
+\begin{enumerate}
+\item \(A^{-1}=(I+A)\Rightarrow A\cdot A^{-1}=I^2-A^2=I\)
+\label{sec:org9526682}
+\item \(A^{-1}=(I^2+IA+A^2)\Rightarrow A\cdot A^{-1}=I^3-A^3=I\)
+\label{sec:orge770d56}
+\item For real number \(I\) and \(A\), we see that \(I^n-A^n\) can be factored into \(I-A\) and another polynomial, because according to remainder theorem, plugging in \(I=A\) results in \(I^n-A^n=0\). Thus, we could follow the same pattern to construct always a \(A^{-1}\).
+\label{sec:org50d6516}
+\item Set \(A^{-1}=(-A-2I)\)
+\label{sec:org64f71be}
+\item Set \(A^{-1}=(-A^2-A)\)
+\label{sec:org2e37730}
+\end{enumerate}
+\item \textbf{Exercise 19}
+\label{sec:org859014f}
+$$AB=\begin{pmatrix}
+1 & ab\\
+0 & 1
+\end{pmatrix}$$
+$$A^2=\begin{pmatrix}
+1 & 2a\\
+0 & 1
+\end{pmatrix}$$
+Inductive step:
+$$\begin{aligned}
+A^{n+1}&=A^n\cdot A\\
+&=\begin{pmatrix}
+1 & na\\
+0 & 1
+\end{pmatrix}\cdot A\\
+&=\begin{pmatrix}
+1 & (n+1)a\\
+0 & 1
+\end{pmatrix}
+\end{aligned}$$
+Thus, we have proved it.
+\item \textbf{Exercise 20}
+\label{sec:orgf721d1e}
+$$A^{-1}=\begin{pmatrix}
+1 & -a \\
+0 & 1
+\end{pmatrix}$$
+\item \textbf{Exercise 21}
+\label{sec:orgf247304}
+We now show that \(B^{-1}A^{-1}\) would be an inverse of \(AB\).
+$$(AB)(B^{-1}A^{-1})=A(B\cdot B^{-1})A^{-1}=A\cdot A^{-1}=I$$
+And for the reverse, it is easy to verify either.
+\item \textbf{Exercise 22}
+\label{sec:org366f8b0}
+See the solution manual
+\item \textbf{Exercise 23}
+\label{sec:orgdcd25c0}
+$$\begin{aligned}
+A^2&=A\cdot A\\
+&=\begin{pmatrix}
+\cos 2\theta & -\sin 2\theta\\
+\sin 2\theta & \cos 2\theta
+\end{pmatrix}
+\end{aligned}$$
+Inductive step:
+$$\begin{aligned}
+A^{n+1}&=\begin{pmatrix}
+\cos n\theta & -\sin n\theta\\
+\sin n\theta & \cos n\theta
+\end{pmatrix}\cdot A\\
+&=\begin{pmatrix}
+\cos n\theta \cos \theta - \sin n\theta \sin \theta & -(\sin n\theta \cos \theta + \sin \theta \cos n\theta) \\
+\sin n\theta \cos \theta + \sin \theta \cos n\theta & - \sin n\theta + \cos n\theta \cos \theta
+\end{pmatrix}
+&=\begin{pmatrix}
+\cos (n+1)\theta & -\sin (n+1)\theta\\
+\sin (n+1)\theta & \cos (n+1)\theta
+\end{pmatrix}
+\end{aligned}$$
+Thus, we have determined \(A^n\)
+\item \textbf{Exercise 24}
+\label{sec:org4b8579e}
+$$A=\begin{pmatrix}
+0 & 1\\
+-1 & 0
+\end{pmatrix}$$
+\item \textbf{Exercise 25}
+\label{sec:org46c9934}
+\begin{enumerate}
+\item \(\text{tr}(A)=2\)
+\label{sec:orgc2468c1}
+\item \(\text{tr}(A)=4\)
+\label{sec:orge588349}
+\item \(\text{tr}(A)=8\)
+\label{sec:org50f91c2}
+\end{enumerate}
+\item \textbf{Exercise 26}
+\label{sec:org04b4882}
+See \textbf{Exercise 27}.
+\item \textbf{Exercise 27}
+\label{sec:org49b033a}
+$$\begin{aligned}
+\text{tr}(AB)&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n a_{ij} b_{ji}]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n b_{ji} a_{ij}]\\
+&=\sum\limits_{i=1}^n [\sum\limits_{j=1}^n b_{ij} a_{ji}] && \text{They are the same if you expand}\\
+&=\text{tr}(BA)
+\end{aligned}$$
+\item \textbf{Exercise 28}
+\label{sec:org5225cb2}
+As diagonal line keeps same after transpose, trace of the matrix would not change as well.
+\item \textbf{Exercise 29}
+\label{sec:org936cec1}
+\(A^n=((a_{ij})^n)\)
+\item \textbf{Exercise 30}
+\label{sec:org2114678}
+$$A^2=\begin{pmatrix}
+a_1^2 & 0 & \cdots & 0\\
+0 & a_2^2 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^2
+\end{pmatrix}$$
+Inductive step
+$$A^{k+1}=\begin{pmatrix}
+a_1^k & 0 & \cdots & 0\\
+0 & a_2^k & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^k
+\end{pmatrix}\cdot A=\begin{pmatrix}
+a_1^{k+1} & 0 & \cdots & 0\\
+0 & a_2^{k+1} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & a_n^{k+1}
+\end{pmatrix}$$
+\(\blacksquare\)
+\item \textbf{Exercise 31}
+\label{sec:org12a49ec}
+See \textbf{Exercise 35}
+\item \textbf{Exercise 32}
+\label{sec:org72452cf}
+We want to show
+$$\begin{aligned}
+^t(A^{-1})&=(^t A)^{-1}\\
+^t(A^{-1})\cdot ^t (A)&=(^t A)^{-1} \cdot (^tA)\\
+^t(A^{-1})\cdot ^t (A)&=I_n\\
+\end{aligned}$$
+Let \(C=^t(A^{-1})\cdot ^t (A)\). We then know
+$$\begin{aligned}
+c_{ij}&=\sum\limits_{k=1}^n a^{\prime -1}_{ik} a^{\prime}_{kj}\\
+&=\sum\limits_{k=1}^n a_{jk} a^{-1}_{ki}\\
+&=A_j\cdot A^{-1\ i}
+\end{aligned}$$
+Thus,
+$$\begin{aligned}
+C&=^t(A\cdot A^{-1})\\
+&=^t(I_n)=I_n
+\end{aligned}$$
+If we do it in the reverse way, then we can prove it.
+\item \textbf{Exercise 33}
+\label{sec:orgccb4993}
+Let \(B=^t (\bar{A})\), then \(b_{ij}=\bar{a}_{ji}\). Let \(C=\overline{^t A}\), then \(c_{ij}=\bar{a^{\prime}}_{ij}=\bar{a}_{ji}\). Thus, \(B=C\).
+\item \textbf{Exercise 34}
+\label{sec:org100615e}
+Its inverse is
+$$\begin{pmatrix}
+\frac{1}{a_1} & 0 & \cdots & 0\\
+0 & \frac{1}{a_2} & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots \\
+0 & 0 & \cdots & \frac{1}{a_n}
+\end{pmatrix}$$
+\item \textbf{Exercise 35}
+\label{sec:org8b9083e}
+See solution manual. Here I would not like to introduce complex formal reasoning to simulate computation result.
+\item \textbf{Exercise 36}
+\label{sec:org0697bd9}
+
+By result of \textbf{Exercise 35} we see that \(N^{n+1}=O\) as \(N=A-I_n\) is of the form being described in \textbf{Exercise 35}.\\
+For inverse part, see \textbf{Exercise 18}.
+\item \textbf{Exercise 37}
+\label{sec:org2c35ba7}
+$$(I-N)(I+N+\cdot +N^r)=I^{r+1}-N^{r+1}=I^{r+1}=I$$
+\item \textbf{Exercise 38}
+\label{sec:orgb1ae627}
+See solution manual for detail computation.
+\item \textbf{Exercise 39}
+\label{sec:org8ca03c9}
+Since we know \(AB=BA\) or \(A,B\) fulfills \textbf{SP 1}, we may say
+$$(AB)^r=A^rB^r=O$$
+For \((A+B)\), \textbf{I don't know how to prove by now because I don't know binomial formula well}.
 \end{enumerate}
 \end{document}
