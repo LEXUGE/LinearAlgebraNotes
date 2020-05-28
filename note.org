@@ -706,4 +706,111 @@ See solution manual for detail computation.
 **** *Exercise 39*
 Since we know $AB=BA$ or $A,B$ fulfills *SP 1*, we may say
 $$(AB)^r=A^rB^r=O$$
-For $(A+B)$, *I don't know how to prove by now because I don't know binomial formula well*.
+For $(A+B)$, we discuss $(A+B)^{2r}$ where $r$ is the larger $r$ for $A$ and $B$.
+$$(A+B)^{2r}=\sum _{k=0}^{2r}{\binom {2r}{k}}A^{2r-k}B^{k}$$
+If $1\geq k\leq r$, then $2r-k\geq r$ and $A^{2r-k}=O$. If $r<k \leq 2r$, then $B^k=O$. Thus, essentially, $(A+B)^{2r}=O$.
+* Chapter 3
+** $\S$ 1
+*** Notes
+If we want to say that $S$ is the image of $A$ under $F$, we are essentially trying to say followings:
+$$\begin{aligned}
+&\forall z\in S, \exists x:F(x)=z. \Rightarrow S\subset F(A)\\
+&\forall a\in A, F(a)\in S. \Rightarrow F(A)\subset S
+\end{aligned}$$
+Above are exactly what *Example 6* on Pg. 45 are saying.\\
+Also, we shall work on the equality of two linear mappings. Two linear mappings $F:S_1\rightarrow T_1 ,G:S_2\rightarrow T_2$ are said to be equal if and only if followings are fulfilled:
+$$\begin{aligned}
+S_1&=S_2\\
+T_1&=T_2\\
+\forall z\in S_1, F(z)&=G(z)
+\end{aligned}$$
+Proofs left to readers on Pg. 49.\\
+ /If $u_1,u_2$ are elements of $V$, then $T_{u_1+u_2}=T_{u_1}\circ T_{u_2}$./\\
+$$\begin{aligned}
+\forall v\in V, T_{u_1+u_2}&=(u_1+u_2)+v\\
+&=u_1+(u_2+v)\\
+&=T_{u_1}(u_2+v)\\
+&=T_{u_1}(T_{u_2}(v))\\
+&=T_{u_1}\circ T_{u_2}(v)
+\end{aligned}$$
+Which means that $T_{u_1+u_2}=T_{u_1}\circ T_{u_2}$ according to our definition of linear mapping equality.\\
+/If $u$ is an element of $V$, then $T_u:V\rightarrow V$ has an inverse mapping which is nothing but the translation $T_{-u}$./\\
+First, it is easy to verify that $T_{-u}$ is an inverse of $T_u$. Then, we say that there is an inverse $T_u^{-1}$. According to the definition of inverse of a linear mapping, we have, for every $v\in V$ that
+$$\begin{aligned}
+T_u^{-1}(T_u(v))&=I_V(v)=v\\
+T_u^{-1}(v+u)&=v\\
+T_u^{-1}(x)&=x-u && \text{Let } x=v+u\\
+\end{aligned}$$
+which attests $T_{u}^{-1}=T_{-u}$.
+*** Exercises
+**** *Exercise 1*
+/*Calculus involved, not doing now.*/
+**** *Exercise 2*
+Proved in notes.
+**** *Exercise 3*
+***** $L(X)=11$
+***** $L(X)=13$
+***** $L(X)=6$
+**** *Exercise 4*
+\\
+$F(1)=(e,1)$, $F(0)=(1,0)$, $F(-1)=(e^{-1},-1)$
+**** *Exercise 5*
+\\
+$(F+G)(1)=(e+1,3)$, $(F+G)(2)=(e^2+2,6)$, $(F+G)(0)=(1,0)$
+**** *Exercise 6*
+\\
+$(2F)(0)=(2,0)$, $(\pi F)(1)=(\pi e,\pi)$
+**** *Exercise 7*
+For (a), it is 1. For (b), it is 11.
+**** *Exercise 8*
+\\
+The image is a ellipse of the equation
+$$\frac{u^2}{4}+\frac{w^2}{9}=1$$
+Proof is omitted.
+**** *Exercise 9*
+\\
+The image is a straight line
+$$y=\frac{1}{2}x$$
+/Proof./ $A=\{(2,y)|y\in \mathbb{R}\}$, $S=\{(2x,x)|x\in \mathbb{R}\}$. We contend that $\forall a\in A, F(a)\in S$.
+$$\forall y\in \mathbb{R}, F(2,y)=(2y,y)\in S$$
+Conversely, $\forall s=(x,\frac{1}{2}x)\in S$, let $a=(2,\frac{1}{2}x)\in A$, so that $F(a)=s$, which means $S\subset F(A)$.
+**** *Exercise 10*
+It is a circle of center $(0,0)$ and radius $e^c$. Proof is omitted.
+**** *Exercise 11*
+\\
+It is a cylinder of radius 1 and center $(0,0)$. Proof is omitted.
+**** *Exercise 12*
+$x^2+y^2=1$. Proof is omitted.
+** $\S$ 2
+*** Notes
+Here we have an important *Lemma*\\
+/Let $F:V\rightarrow W$ is a linear mapping. If for some $v_i\in V$, we have $F(v_i)$ are linear independent, then $v_i$ are linear independent./\\
+/Proof./ If $\sum\limits_{i=1}^n t_i v_i=O$, then we have
+$$\begin{aligned}
+\sum\limits_{i=1}^n t_i v_i&=O\\
+F(\sum\limits_{i=1}^n t_i v_i)&=F(O)=O && \text{(This is ensured as "output" of a mapping is unique for same "input")}\\
+\sum\limits_{i=1}^n t_i F(v_i)=O
+\end{aligned}$$
+which means if $\sum\limits_{i=1}^n t_i v_i=O$, we must have $\sum\limits_{i=1}^n t_i F(v_i)=O$. Since $F(v_i)$ are linear independent, we obtain that $t_i$ is always equal to $0$, which is another word for $v_i$ are linear independent.\\
+It is noteworthy that reversal of this *Lemma* is *NOT* always true as $F(v)=O$ doesn't ensure that $v=O$.
+*** Exercises
+**** *Exercise 1*
+Only (a), (b), (d), (e), (f), (h) are linear mappings. For (h), it involves */Calculus/*.
+**** *Exercise 2*
+$T(O)=T[v+(-v)]=T(v)+T(-v)=T(v)-T(v)=O$
+**** *Exercise 3*
+$T(u+v)=T(u)+T(v)=w+O=w$
+**** *Exercise 4*
+\\
+Let the set of elements $v\in V$ satisfying $T(v)=w$ be $S$. We contend that $\forall v\in S, \exists u\in U:v=u+v_0$.\\
+/Proof./ let $u=v-v_0$. $F(u)=F(v-v_0)=F(v)-F(v_0)=O$. Thus, $v\in U$. This means $S\subset (v_0+U)$.\\
+Conversely, we contend that $\forall u\in U$, we have $(v_0+u)\in S$.\\
+/Proof./ $T(v_0+u)=T(v_0)+T(u)=w+O=w$. This means $(v_0+U)\subset S$.\\
+Thus, $S=(v_0+U)$.
+**** *Exercise 5*
+As *Exercise 2* said, $T(O)=T(v-v)=T(v)+T(-v)=O \Rightarrow T(-v)=-T(v)$.
+**** *Exercise 6*
+\\
+Firstly, $F(v_1+v_2)=(f(v_1)+f(v_2),g(v_1)+g(v_2))=(f(v_1),g(v_1))+(f(v_2),g(v_2))=F(v_1)+F(v_2)$ \\
+Secondly, $F(cv)=(cf(v),cg(v))=c(f(v),g(v))=cF(v)$
+**** *Exercise 7*
