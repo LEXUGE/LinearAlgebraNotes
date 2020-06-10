@@ -134,16 +134,21 @@ Same technique as Exercise 12.
 *** Notes
 <<linear-independence-equivalence>>
 Another quite helpful equivalent of definition of linear independence is that (stated following without loss of generality)
-$$\forall a_1\not = 0,a_1 v_1\not =\sum\limits_{i=2}^n a_i$$
+$$\forall a_i\in K \text{ and some } a_i\not = 0, \text{ we have }a_1 v_1\not =\sum\limits_{i=2}^n a_iv_i$$
 Here is the /proof/ of equivalence between above statement and definition of linear independence.\\
-Since $a_1\not = 0$,
 $$\begin{aligned}
-v_1&\not =\sum\limits_{i=2}^n \frac{a_i}{a_1}v_i\\
-O&\not = -v_1+\sum\limits_{i=2}^n \frac{a_i}{a_1}v_i\\
-\lambda O&\not = (-\lambda)v_1 + \sum\limits_{i=2}^n \frac{\lambda a_i}{a_1}v_i && \lambda\in K \text{ and }\lambda\not = 0\\
-O&\not = (-\lambda)v_1 + \sum\limits_{i=2}^n \frac{\lambda a_i}{a_1}v_i && \lambda\in K \text{ and }\lambda\not = 0\\
+a_1 v_1&\not =\sum\limits_{i=2}^n a_iv_i\\
+O &\not = \sum\limits_{i=1}^n a_iv_i
 \end{aligned}$$
-$\lambda$ and $a_i$ could be arbitrary, thus from above we could conclude that $a'_1 v_1\not =\sum\limits_{i=2}^n a'_i$ if and only if all $a'=0$, which is the definition of linear independence.\\
+This means as long as *some* $a_i\not =0$, $O \not = \sum\limits_{i=1}^n a_iv_i$. In other words, only if all $a_i=0$, $O = \sum\limits_{i=1}^n a_iv_i$. This means any $v_i$ fulfilling our statement are linear independent. Conversely, if $v_i$ are linear independent, it is clear that as long as *not all* $v_i=0$, $a_1 v_1\not =\sum\limits_{i=2}^n a_iv_i$, which is equal to our statement.\\
+A simple but useful variation of this is
+$$\forall v_i\in K, v_1\not = \sum\limits_{i=2}^n x_iv_i$$
+/Proof/. We see that
+$$\begin{aligned}
+O&\not = -v_1+\sum\limits_{i=2}^n x_iv_i\\
+O&\not = (-\lambda)v_1+\sum\limits_{i=2}^n \lambda x_iv_i && \lambda\not = 0\text{ (If } \lambda=0 \text{ inequality holds not)}
+\end{aligned}$$
+Since $\lamda$ and $v_i$ can be arbitrary and they cannot be $0$ all at once, we see it falls into the case of original statement.\\
 Also, another point that worth paying attention to is that generators could be *linear dependent*. This is true because you could put arbitrary vectors at the end of a basis of a vector space and just set coefficients for these extraneous vectors when it is producing new linear combinations.
 *** Exercises
 **** *Exercise 1*
@@ -264,7 +269,13 @@ Since $(1,0,0), (1,1,0), (0,1,1)$ are linear independent, we obtain that
 $$\forall v\in V, \exists \text{ unique } a,b,c\in K: v=a\cdot (1,0,0)+b\cdot (1,1,0)+ c\cdot (0,1,1)$$
 Set $u=a\cdot (1,0,0)$ and $w=b\cdot (1,1,0)+ c\cdot (0,1,1)$, it would be proved.
 **** *Exercise 3*
-According to argument provided [[linear-independence-equivalence][here]], $\forall c\in K,cA\not =B$ means that $A,B$ are linear independent. Also, according to *Theorem 3.4*, they are a basis of $\mathbb{R}^2$.\\
+$$\begin{aligned}
+cA&\not =B\\
+O&\not = B-cA\\
+O&\not =\lambda B-c\lambda A && \lambda\not = 0\text{ (If } \lambda=0 \text{ inequality holds not)}
+\end{aligned}$$
+Since $\lambda,c$ are arbitrary and $\lambda\not = 0$, coefficients before $A$ and $B$ can be anything but not equal to $0$ together.
+According to argument provided [[linear-independence-equivalence][here]], $A,B$ are linear independent. Also, according to *Theorem 3.4*, they are a basis of $\mathbb{R}^2$.\\
 Based on the similar argument in *Exercise 1*, second part could be proved.
 **** *Exercise 4*
 See notes
@@ -845,3 +856,18 @@ $T_u(v_1+v_2)=v_1+v_2+u=T_u(v_1)+T_u(v_2)=v_1+v_2+2u$. Thus, we have $2u=u$ and 
 **** *Exercise 15*
 It is shown in [[lemma_3.2.1][Lemma]].
 **** *Exercise 16*
+\\
+If $v\in W$, simply let $c=0$ and $w=v$.\\
+If $v\not \in W$, let $c=\frac{F(v)}{F(v_0)}$ and $w=v-cv_0$. We then contend that $w\in W$. Since $F(w)=F(v-cv_0)=F(v)-cF(v_0)=0$, we conclude $w\in W$. Thus, concludes.
+**** *Exercise 17*
+\\
+We see that $F(w_1+w_2)=F(w_1)+F(w_2)=0+0=0$. Also, $F(cw)=cF(w)=0$. And since $F$ is linear and as we proved before, $F(O)=O$ and $O\in W$. Thus, $W$ is a subspace of $V$.\\
+We know by *Exercise 16* that $\{v_0,v_1,\cdots , v_n\}$ generates $V$. We contend then that they are linear independent. It is by definition that $\{v_1,\cdots , v_n\}$ are linear independent. Since $v_0\not \in W$, we see that $v_0$ cannot be expressed by linear combination of $\{v_0,v_1,\cdots , v_n\}$, [[linear-independence-equivalence][thereby]] $v_0$ is linear independent from others. Thus, they are linear independent. Then, by definition, this set is a basis of $V$.
+**** *Exercise 18*
+1. $(-1,-1)$
+2. $(-\frac{2}{3},1)$
+3. $(-2,-1)$
+**** *Exercise 19*
+1. $(4,5)$
+2. $(\frac{11}{3},-3)$
+3. $(4,2)$
