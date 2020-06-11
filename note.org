@@ -148,7 +148,7 @@ $$\begin{aligned}
 O&\not = -v_1+\sum\limits_{i=2}^n x_iv_i\\
 O&\not = (-\lambda)v_1+\sum\limits_{i=2}^n \lambda x_iv_i && \lambda\not = 0\text{ (If } \lambda=0 \text{ inequality holds not)}
 \end{aligned}$$
-Since $\lamda$ and $v_i$ can be arbitrary and they cannot be $0$ all at once, we see it falls into the case of original statement.\\
+Since $\lambda$ and $v_i$ can be arbitrary and they cannot be $0$ all at once, we see it falls into the case of original statement.\\
 Also, another point that worth paying attention to is that generators could be *linear dependent*. This is true because you could put arbitrary vectors at the end of a basis of a vector space and just set coefficients for these extraneous vectors when it is producing new linear combinations.
 *** Exercises
 **** *Exercise 1*
@@ -274,7 +274,7 @@ cA&\not =B\\
 O&\not = B-cA\\
 O&\not =\lambda B-c\lambda A && \lambda\not = 0\text{ (If } \lambda=0 \text{ inequality holds not)}
 \end{aligned}$$
-Since $\lambda,c$ are arbitrary and $\lambda\not = 0$, coefficients before $A$ and $B$ can be anything but not equal to $0$ together.
+Since $\lambda ,c$ are arbitrary and $\lambda\not = 0$, coefficients before $A$ and $B$ can be anything but not equal to $0$ together.
 According to argument provided [[linear-independence-equivalence][here]], $A,B$ are linear independent. Also, according to *Theorem 3.4*, they are a basis of $\mathbb{R}^2$.\\
 Based on the similar argument in *Exercise 1*, second part could be proved.
 **** *Exercise 4*
@@ -871,3 +871,42 @@ We know by *Exercise 16* that $\{v_0,v_1,\cdots , v_n\}$ generates $V$. We conte
 1. $(4,5)$
 2. $(\frac{11}{3},-3)$
 3. $(4,2)$
+** $\S$ 3
+*** Notes
+Another part for *Theorem 3.3*. If $\text{Im } L=W$, then $\dim \text{Im } L=\dim W$ and $\dim \text{Ker }L=0$. Thus, $\text{Ker } L=\{O\}$.
+*** Exercises
+**** *Exercise 1*
+\\
+We know $\dim \mathbb{R}^{n}=n$. According to rank-nullity law, we see that $\dim \mathbb{R}^2=\dim \text{Ker }F+\dim \text{Im }F$. Thus, $2=\dim \text{Ker }F+n$ and $2-n=\dim \text{Ker }F$ Since $n,\dim \text{Ker }F\geq 0$, we see that $0\leq n\leq 2$.
+1. $n=2$, then $\dim \text{Ker }F=0$ and $\text{Ker }F=\{O\}$. This means that $t_1F(A)+t_2F(B)=O \Rightarrow F(t_1A+t_2B)=O \Rightarrow t_1A+t_2B=O \Rightarrow t_1=t_2=0$.
+2. $n=1$, then $\dim \text{Im }F=1$.
+3. $n=0$, then $\dim \text{Im }F=0$ and $\text{Im }F=\{O\}$.
+**** *Exercise 2*
+\\
+We know then that $\dim \text{Ker }F\not =0$. Since $2-\dim \text{Ker } F=\dim \text{Im }F$, we see that $\dim \text{Im }F=0$ or $1$. This concludes our prove.
+**** *Exercise 3*
+Consider $L:\mathbb{R}^4\rightarrow \mathbb{R}^2$ such that $L(x_1,x_2,x_3,x_4)=L(x_1+2x_2,x_3-15x_4)$. According to rank-nullity theorem and since $\text{Ker }L=W$, we see that $\dim \mathbb{R}^4=\dim W+\dim \mathbb{R}^{2}$. Thus $\dim W=2$.
+**** *Exercise 4*
+We contend that there exists such a $u$. $\forall X$, $L(X-v_0)=L(X)-L(v_0)=O$. This means if we let $u=X-v_0$, then $u\in \text{Ker }L$.
+**** *Exercise 5-9*
+/*Calculus Involved, not done now.*/
+**** *Exercise 10*
+\\
+1. Let such a subspace be $W$. Consider $L:\mathbb{R}^n\rightarrow \mathbb{R}$ such that $L(X)=\sum\limits_{i=1}^n x_i$. According to rank-nullity theorem and since $\text{Ker }L=W$, we see that $\dim \mathbb{R}^n=\dim W+\dim \mathbb{R}$. Thus $\dim W=n-1$.
+2. Let such a subspace be $W$. Consider $tr:\text{Mat}_{n\times n}(\mathbb{R})\rightarrow \mathbb{R}$ such that $tr(A)=\sum\limits_{i=1}^n a_ii$. According to rank-nullity theorem and since $\text{Ker }tr=W$, we see that $\dim \text{Mat}_{n\times n}(\mathbb{R})=\dim W+\dim \mathbb{R}$. Thus $\dim W=n^2-1$.
+**** *Exercise 11*
+1. We have $tr(A+B)=\sum\limits_{i=1}^n(a_{ii}+b_{ii})=\sum\limits_{i=1}^n a_{ii}+\sum\limits_{i=1}^n b_{ii}=tr(A)+tr(B)$ and $tr(cA)=\sum\limits_{i=1}^n(ca_{ii})=c\sum\limits_{i=1}^n a_{ii}=c\cdot tr(A)$. This concludes linearity for $tr$.
+2. $$\begin{aligned}
+   tr(AB)&=\sum\limits_{i=1}^n A_iB^i\\
+   &=\sum\limits_{i,j=1}^n a_{ij}b_{ji}\\
+   &=\sum\limits_{i,j=1}^n b_{ji}a_{ij}\\
+   &=\sum\limits_{i=1}^{n} B_iA^i\\
+   &=tr(BA)\\
+   \end{aligned}$$
+3. Since we know $tr(AB)=tr(BA)$, we have $tr[(B^{-1}A)B]=tr[B(B^{-1}A)]=tr[(BB^{-1})A]=tr(I_nA)=tr(A)$
+4. Firstly, $\langle A,B \rangle = tr(AB)=tr(BA)=\langle B,A \rangle$. Secondly, $\langle A,B+C \rangle=tr[A(B+C)]=tr[AB+AC]=tr(AB)+tr(AC)=\langle A,B\rangle+\langle A,C\rangle$. Thirdly, $c\langle A,B \rangle=c\sum\limits_{i=1}^n A_iB^i=\sum\limits_{i=1}^n (cA_i)B^i=\langle cA,B \rangle$.
+5. $tr(AB-BA)=tr(AB)-tr(BA)=0$. Since $tr(I_n)=n$, this could not be possible.
+**** *Exercise 12*
+$\dim S=\frac{n(n+1)}{2}$. Bases are trivial, skipped.
+**** *Exercise 13*
+$tr(AA)=\sum\limits_{i,j=1}^n a_{ij}a_{ji}=\sum\limits_{i,j=1}^n (a_{ij})^2\geq 0$
