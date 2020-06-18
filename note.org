@@ -909,4 +909,40 @@ We contend that there exists such a $u$. $\forall X$, $L(X-v_0)=L(X)-L(v_0)=O$. 
 **** *Exercise 12*
 $\dim S=\frac{n(n+1)}{2}$. Bases are trivial, skipped.
 **** *Exercise 13*
-$tr(AA)=\sum\limits_{i,j=1}^n a_{ij}a_{ji}=\sum\limits_{i,j=1}^n (a_{ij})^2\geq 0$
+\\
+$tr(AA)=\sum\limits_{i,j=1}^n a_{ij}a_{ji}=\sum\limits_{i,j=1}^n (a_{ij})^2\geq 0$.
+Since $a_{ji}^2=0$ if and only if $a_{ji}=0$, $tr(AA)=0$ if and only if $A=O$.
+**** *Exercise 14*
+\\
+Part (a). Let $B=\frac{A+^tA}{2}$, then $b_{ij}=\frac{a_{ij}+a_{ji}}{2}=\frac{a_{ji}+a_{ij}}{2}=b_{ji}$. Thus, $B$ is symmetric. We also know that $C=\frac{A-{}^tA}{2}$ and contend that $^tC=-C$ which is $^t(A-{}^t A)={}^tA-A$. Let $\tilde{A}=^t(A-{}^t A)=(\tilde{a}_{ij})$. We have $\tilde{a}_{ij}=^t(a_{ij}-a_{ji})=a_{ji}-a_{ij}$. Thus, $\tilde{A}={}^tA-A$. Thus, it concludes statement.\\
+
+Part (b).
+Let $B=\frac{A+{}^tA}{2}$, thus $C=\frac{A-{}^tA}{2}$. We then contend $\frac{A-{}^tA}{2}-C_1=O$.
+$$\begin{aligned}
+\frac{A-{}^tA}{2}-C_1&=O &&\Leftrightarrow\\
+A-{}^tA-2C_1&=O &&\Leftrightarrow\\
+B_1+C_1-{}^tA-2C_1&=O &&\Leftrightarrow\\
+B_1-{}^tA-C_1&=O &&\Leftrightarrow\\
+^tB_1 +{}^tC_1 &={}^tA &&\Leftrightarrow\\
+^t({}^tB_1+{}^tC_1)&=A &&\Leftrightarrow\\
+B_1+C_1&=A
+\end{aligned}$$
+$\blacksquare$
+**** *Exercise 15*
+\\
+Part (a). $P(A+B)=\frac{(A+B)+{}^tA+{}^tB}{2}=\frac{A+{}^tA+B+{}^tB}{2}=P(A)+P(B)$. $P(cA)=\frac{cA+{}^t(cA)}{2}=\frac{c(A+{}^tA)}{2}=cP(A)$.
+\\
+Part (b).
+$P(A)=O \Leftrightarrow A+{}^tA=O \Leftrightarrow -A={}^tA$.
+\\
+Part (c).
+Dimension is $\frac{n(n+1)}{2}$.
+**** *Exercise 16*
+\\
+Part (a). Similar to *Exercise 15*.
+\\
+Part (b). $A={}^tA$, symmetric matrices. Dimension is $\frac{n(n+1)}{2}$.
+**** *Exercise 17*
+\\
+It is trial to show vector space. $O=(O_u,O_w)$.
+As we proved before in Chapter 1, $\dim (U\times W)=\dim U+ \dim W$. Such basis is $(u_1,O_w),\dots ,(u_n,O_w),(O_u,w_1),\dots ,(O_u,w_m)$.
